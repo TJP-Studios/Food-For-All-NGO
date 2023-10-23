@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+img {
+    width: 100%;
+}
+
+.home-hero {
+    background-image: url(./assets/img/home-hero-1.png);
+    /* opacity: 0.9; */
+    /* width: 50%; */
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.home-hero-txt {
+    width: 55%;
+}
+
+.home-hero-txt h1 {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2%;
+}
+
+.home-hero-txt p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px; /* 200% */
+}
+
+form {
+    width: 40%;
+    background-color: #FFF;
+    padding: 2% 3%;
+}
+
+.home-form-donation-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+
+.home-form-donation-caption img {
+    width: 4%;
+}
+
+.home-form-donation-caption h6 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.donation-form-title {
+    display: flex;
+    margin: 2% 0 5% 0;
+}
+
+.one-time-btn {
+    border: none;
+    background: #0E811B;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    width: 50%;
+    padding: 2%;
+}
+
+.monthly-btn {
+    border: 1px solid #000;
+    background: #FFF;
+    color: #0E811B;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    width: 50%;
+    padding: 2%;
+}
+
+.donation-form-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.donation-form-selection button {
+    border: 1px solid #000;
+    background: #FFF;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    width: 30%;
+    padding: 2%;
+}
+
+.donation-form-input input {
+    border: 1px solid #000;
+    background: #FFF;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    padding: 2%;
+}
+
+.agreement {
+   margin: 5% 0 20% 0;
+}
+
+.hero-form-donate-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    align-items: center;
+    background-color: #0E811B;
+    color: #fff;
+    padding: 2%;
+    transition: ease 0.2s;
+}
+
+.hero-form-donate-btn:hover {
+    background-color: #0c6c17;
+}
+
+.hero-form-donate-btn img {
+    width: 75%;
+    vertical-align: middle;
+}
+
+.hero-form-donate-btn a {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
