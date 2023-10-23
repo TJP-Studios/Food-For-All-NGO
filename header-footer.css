@@ -63,7 +63,7 @@ nav {
     padding-bottom: 2%;
 }
 
-.active {
+.nav-links .active {
     color: #0E811B;
     font-weight: 500;
     border-bottom: 4px solid #0E811B;
