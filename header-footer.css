@@ -23,12 +23,7 @@ header {
 }
 
 .header-logo {
-    padding: 1% 2%;
-    background-color: #0E811B;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 10%;
 }
 
 nav {
@@ -96,4 +91,72 @@ nav {
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+}
+
+
+/* Footer */
+footer {
+    margin: 5%;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    /* padding-right: 5%; */
+    /* width: 25%; */
+}
+
+.middle {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 0 15%;
+}
+
+.right {
+    /* padding-left: 5%; */
+    /* width: 25%; */
+}
+
+.contact-details h5 {
+    color: #0E811B;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contact-details p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 1% 0 25% 0;
+}
+
+.contact-details p span {
+    font-weight: 600;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    border: 1px solid #FFF;
+    background-color: #0E811B;
+    padding: 8%;
+}
+
+.our-partners {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.our-partners img {
+    width: 8%;
 }

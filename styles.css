@@ -261,17 +261,26 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 30%;
 }
 
-.stats-img {
-    width: 20%;
+.stats-img-1 {
+    width: 15%;
+}
+
+.stats-img-2 {
+    width: 15%;
+}
+
+.stats-img-3 {
+    width: 12%;
 }
 
 .stats-details p {
     color: #0E811B;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 40px; /* 200% */
+    line-height: 30px; 
     text-align: center;
 }
 
@@ -391,5 +400,117 @@ article {
 
 .our-cart-last-img {
     width: 50%;
+}
+
+.donate {
+    padding: 5%;
+    background-color: #0E811B;
+}
+
+.donate p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    text-align: center;
+}
+
+.donate-btn {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    background-color: #0E811B;
+    color: #fff;
+    border: none;
+    padding: 2%;
+    transition: ease 0.2s;
+    text-decoration: none;
+    margin: 3% auto;
+    border: 1px solid #FFF;
+    box-shadow: -8px -8px 12px 0px rgba(255, 255, 255, 0.25), 8px 8px 12px 0px rgba(255, 255, 255, 0.25);
+}
+
+.donate-btn:hover {
+    background-color: #0c6c17;
+}
+
+.donate-btn img {
+    width: 15%;
+    vertical-align: middle;
+}
+
+.donate-btn p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.mission-target {
+    margin: 5%;
+    background-color: #0E811B;
+    padding: 3%;
+}
+
+.mission-target h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: normal;
+    width: 70%;
+    margin: 0 auto 3% auto;
+}
+
+.mission-target p {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.mission-target-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission-stats-title {
+    width: 45%;
+    margin: 3% 0 0 0;
+}
+
+.mission-stats-title p {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.mission-stats-title p span {
+    font-weight:  600;
+}
+
+.mission-stats-info {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.mission-stats-info img {
+    width: 15%;
+}
+
+.mission-stats-info p {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+hr {
+    border: 1px solid #FFF;
+    margin: 5% 0;
 }
 
