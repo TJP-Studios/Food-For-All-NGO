@@ -104,25 +104,27 @@ footer {
 .contact-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
-.left {
+.contact-details-left {
     /* padding-right: 5%; */
-    /* width: 25%; */
+    width: 13%;
 }
 
-.middle {
+.contact-details-middle {
     border-left: 1px solid #000;
     border-right: 1px solid #000;
-    padding: 0 15%;
+    padding: 0 6%;
+    width: 50%;
 }
 
-.right {
+.contact-details-right {
     /* padding-left: 5%; */
-    /* width: 25%; */
+    width: 25%;
 }
 
-.contact-details h5 {
+.contact-details-left h5 {
     color: #0E811B;
     font-size: 20px;
     font-weight: 500;
@@ -130,7 +132,24 @@ footer {
     margin-bottom: 3%;
 }
 
-.contact-details p {
+.contact-details-middle h5 {
+    color: #0E811B;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.contact-details-right h5 {
+    color: #0E811B;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 3%;
+}
+
+.contact-details-left p {
     color: #000;
     font-size: 18px;
     font-weight: 400;
@@ -138,19 +157,70 @@ footer {
     margin: 1% 0 25% 0;
 }
 
-.contact-details p span {
-    font-weight: 600;
+.contact-details-middle p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 1% 0 7% 0;
+    text-align: justify;
 }
 
-.contact-details a {
+.contact-details-right p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 1% 0 15% 0;
+}
+
+.contact-details-left a {
     text-decoration: none;
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
-    border: 1px solid #FFF;
     background-color: #0E811B;
-    padding: 8%;
+    padding: 7% 9%;
+    border-radius: 10px;
+}
+
+
+.contact-details-right a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #0E811B;
+    padding: 4% 6%;
+    border-radius: 10px;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.footer-socials img {
+    width: 6%;
+}
+
+.middle p {
+    margin-bottom: unset
+}
+
+.middle .privacy {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: unset;
 }
 
 .slider-wrapper {

@@ -486,9 +486,15 @@ form {
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+    text-align: center;
 }
 
 .cart-link {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    width: 32%;
+    padding: 2% 0 2% 3%;
     margin-top: 3%;
 }
 
@@ -689,6 +695,14 @@ hr {
     margin: 5%;
 }
 
+.fact-check-container h3 {
+    color: var(--Pry-color, #0E811B);
+font-size: 40px;
+font-weight: 600;
+line-height: 58px; /* 120.833% */
+margin-bottom: 2%;
+}
+
 .fact-check-cart {
     display: flex;
     justify-content: space-between;
@@ -748,15 +762,17 @@ hr {
     justify-content: center;
     gap: 5%;
     align-items: center;
-    background-color: #0E811B;
+    /* background-color: #0E811B; */
     color: #fff;
     border: none;
     padding: 2%;
     transition: ease 0.2s;
     text-decoration: none;
     margin: 3% auto;
-    border: 1px solid #FFF;
-    box-shadow: -8px -8px 12px 0px rgba(255, 255, 255, 0.25), 8px 8px 12px 0px rgba(255, 255, 255, 0.25);
+    /* border: 1px solid #FFF; */
+    border-radius: 10px;
+    background: var(--Pry-color, #0E811B);
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .donate-btn:hover {
