@@ -109,12 +109,11 @@ form {
     width: 50%;
     padding: 4% 5%;
     border-radius: 6px 0 0 6px;
+    cursor: pointer;
 }
 
 .one-time-btn:hover {
-    background: #FFF;
-    color: #0E811B;
-    border: 1px solid #0E811B;
+    background: #0c6c17;
 }
 
 .monthly-btn {
@@ -128,6 +127,7 @@ form {
     width: 50%;
     padding: 4% 5%;
     border-radius: 0 6px 6px 0;
+    cursor: pointer;
 }
 
 .monthly-btn:hover {
@@ -135,9 +135,6 @@ form {
     background: #0E811B;
     color: #FFF;
 }
-
-
-
 
 .donation-form-selection {
     display: flex;
@@ -155,6 +152,7 @@ form {
     width: 30%;
     padding: 4% 5%;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .donation-form-selection button:hover {
@@ -183,7 +181,7 @@ form {
     position: absolute;
     top: -25%;
     left: 5%;
-    opacity: 0;
+    display: none;
     transition: opacity 0.15s;
     pointer-events: none;
     white-space: nowrap;
@@ -199,7 +197,7 @@ form {
 }
 
 .donation-form-input:hover .tool-tip{
-    opacity: 1;
+    display: block;
 }
 
 .donation-form-input:hover ::placeholder{
@@ -207,8 +205,23 @@ form {
 }
 
 .agreement {
-   margin: 5% 0 30% 0;
-}
+    margin: 3% 0 30% 0;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+ }
+ 
+ .agreement input {
+     height: 20px;
+     width: 20px;
+ }
+ 
+ .agreement span {
+     color: #000;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: normal;
+ }
 
 .hero-form-donate-btn {
     width: 100%;
@@ -287,25 +300,27 @@ form {
 .home-partners-slider {
     /* margin: 5% 10%; */
     padding: 2% 0;
-    position: relative;
+    /* position: relative; */
     box-shadow: 0 0px 20px -10px rgba(0, 0, 0, 0.5);
-    /* display: flex;
-    column-gap: 2%; */
+    display: flex;
+    gap: 35%;
     overflow: hidden;
 }
 
 .home-partners-slide {
-    width: 100%;
-    display: flex;
-    align-items: center;
-   justify-content: space-between;
-   gap: 4%;
+    /* width: 100%; */
    animation: slideshow 8s linear infinite reverse;
    /* animation-fill-mode: both; */
+   /* margin-right: 10%; */
+   display: flex;
+   gap: 5%;
+   animation-iteration-count: infinite;
 }
 
 .home-partners-slide img {
-    width: 15%;
+    width: 30%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 @keyframes slideshow {
@@ -316,16 +331,6 @@ form {
     100% {
         transform: translateX(-100%);
     }
-}
-
-.home-partners-img-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.home-partners-img {
-    width: 15%;
 }
 
 .our-mission {
@@ -697,10 +702,10 @@ hr {
 
 .fact-check-container h3 {
     color: var(--Pry-color, #0E811B);
-font-size: 40px;
-font-weight: 600;
-line-height: 58px; /* 120.833% */
-margin-bottom: 2%;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 58px; /* 120.833% */
+    margin-bottom: 2%;
 }
 
 .fact-check-cart {
@@ -741,54 +746,6 @@ margin-bottom: 2%;
     line-height: 32px; /* 133.333% */
     text-transform: capitalize;
     align-items: center;
-}
-
-.donate {
-    padding: 5%;
-    background-color: #0E811B;
-}
-
-.donate p {
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 100%; /* 16px */
-    text-align: center;
-}
-
-.donate-btn {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-    align-items: center;
-    /* background-color: #0E811B; */
-    color: #fff;
-    border: none;
-    padding: 2%;
-    transition: ease 0.2s;
-    text-decoration: none;
-    margin: 3% auto;
-    /* border: 1px solid #FFF; */
-    border-radius: 10px;
-    background: var(--Pry-color, #0E811B);
-    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.donate-btn:hover {
-    background-color: #0c6c17;
-}
-
-.donate-btn img {
-    width: 15%;
-    vertical-align: middle;
-}
-
-.donate-btn p {
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
 }
 
 .test {

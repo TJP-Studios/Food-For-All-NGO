@@ -27,7 +27,7 @@ header {
 }
 
 nav {
-    width: 88%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,9 +66,9 @@ nav {
 }
 
 .header-btn {
-    width: 16%;
+    width: 15%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     background-color: #0E811B;
     color: #fff;
@@ -98,23 +98,74 @@ nav {
 
 /* Footer */
 footer {
-    margin: 5%;
+    margin: 5% 0;
+}
+
+.donate-footer {
+    padding: 3% 5% 5% 5%;
+    margin-bottom: 3%;
+    background: #0E811B;
+}
+
+.donate-footer p {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    /* text-transform: capitalize; */
+}
+
+.donate-btn {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    /* background-color: #0E811B; */
+    color: #fff;
+    border: none;
+    padding: 1% 0;
+    transition: ease 0.2s;
+    text-decoration: none;
+    margin: 3% auto 0 auto;
+    /* border: 1px solid #FFF; */
+    border-radius: 10px;
+    background: var(--Pry-color, #0E811B);
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.donate-btn:hover {
+    background-color: #0c6c17;
+}
+
+.donate-btn img {
+    width: 15%;
+    vertical-align: middle;
+}
+
+.donate-btn p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .contact-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: start;
+    padding: 0 5%;
+    margin-top: 3%;
 }
 
 .contact-details-left {
     /* padding-right: 5%; */
-    width: 13%;
+    width: 15%;
 }
 
 .contact-details-middle {
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
+    border-left: 1px solid #0E811B;
+    border-right: 1px solid #0E811B;
     padding: 0 6%;
     width: 50%;
 }
@@ -162,7 +213,7 @@ footer {
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
-    margin: 1% 0 7% 0;
+    margin: 0% 0 7% 0;
     text-align: justify;
 }
 
@@ -224,8 +275,8 @@ footer {
 }
 
 .slider-wrapper {
-    margin: 5% 10%;
-    padding: 4% 0;
+    margin: 5%;
+    padding: 2% 0;
     position: relative;
     box-shadow: 0 0px 20px -10px rgba(0, 0, 0, 0.5);
     display: flex;
