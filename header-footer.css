@@ -262,7 +262,7 @@ footer {
 }
 
 .middle p {
-    margin-bottom: unset
+    margin-bottom: unset;
 }
 
 .middle .privacy {
@@ -270,8 +270,8 @@ footer {
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
+    width: 50%;
     text-align: center;
-    margin-bottom: unset;
 }
 
 .slider-wrapper {

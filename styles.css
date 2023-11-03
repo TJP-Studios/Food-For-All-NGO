@@ -9,6 +9,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
+    scroll-behavior:smooth;
 }
 
 img {
@@ -27,7 +28,7 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 0 5%;
-    animation: scroll 20s infinite linear;
+    animation: fade 20s infinite linear;
     position: relative;
 }
 
@@ -755,7 +756,7 @@ hr {
 
 
 /* Keyframe */
-@keyframes scroll {
+@keyframes fade {
     0%
     {
         background-image: url(./assets/img/pic/image-1.png);
@@ -786,10 +787,4 @@ hr {
         background-image: url(./assets/img/pic/image-6.png);
     }
 }
-
-
-@keyframes focus {
-    transition: translate(Y);
-}
-
 

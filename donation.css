@@ -93,7 +93,10 @@ img {
 }
 
 .monthly-btn:hover {
-    border: 1px solid #000;
+    border-left: 3px solid #FFF;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
     background: #0E811B;
     color: #FFF;
 }
