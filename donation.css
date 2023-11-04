@@ -492,10 +492,10 @@ form h3 {
     display: none;
     position: absolute;
     left: 5%;
-    animation: slideshow 1s linear infinite;
+    animation: scroll 2s linear infinite;
 }
 
-@keyframes slideshow {
+@keyframes scroll {
     0% {
         transform: translateY(0);
     }
