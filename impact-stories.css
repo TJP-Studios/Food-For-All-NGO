@@ -240,7 +240,7 @@ article h3 {
 
 
 /* Mobile Screen */
-@media screen and (max-width:392px) {
+@media screen and (max-width:478px) {
     .impact-hero h1 {
         font-size: 32px;
         font-weight: 700;
