@@ -218,6 +218,26 @@ img {
     line-height: normal;
 }
 
+.dedicated-input input {
+    border: 1px solid #000;
+    background: #FFF;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    width: 50%;
+    padding: 2% 5%;
+    outline: 0;
+}
+
+.dedicated-input {
+    display: none;
+}
+
+.dedicated-input.visible {
+    display: block;
+}
+
 .donation-img {
     width: 40%;
     position: relative;
@@ -243,6 +263,7 @@ form {
     padding: 1% 5%;
     border: 1px solid #000;
     background: var(--Pry-color, #0E811B);
+    position: relative;
 }
 
 form h3 {
@@ -301,6 +322,20 @@ form h3 {
     outline: 0;
 }
 
+/* .form-overlay {
+    position: absolute;
+    background-color: #000;
+    opacity: 0.4;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+} */
+
+/* .label-input ::placeholder {
+    display: none;
+} */
+
 .anonymous {
     margin: 3% 0 3% 0;
     display: flex;
@@ -356,14 +391,21 @@ form h3 {
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    border: navajowhite;
+    border: none;
     color: #000;
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
+    text-align: center;
+    cursor: pointer;
  }
 
- .payment-method .active-btn {
+ .payment-method button:hover {
+    background: #0E811B;
+    color: #FFF;
+ }
+
+ .payment-method .card-payment {
     border-radius: 10px;
     background: #0E811B;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
@@ -373,25 +415,26 @@ form h3 {
     line-height: normal;
  }
 
- .payment-form-container {
+ .card-payment-container {
     display: flex;
     justify-content: space-between;
+    /* display: none; */
  }
 
- .card-details {
+ .card-payment-details {
     width: 47%;
 }
 
-.payment-label-input label {
+.card-payment-label-input label {
     color: #000;
     font-size: 20px;
     font-weight: 500;
     line-height: normal;
     display: block;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
-.payment-label-input input {
+.card-payment-label-input input {
     border: 1px solid #000;
     background: #FFF;
     color: #000;
@@ -401,13 +444,13 @@ form h3 {
     width: 100%;
     padding: 2%;
     outline: 0;
+    margin-bottom: 3%;
 }
 
-.payment-wrapper {
+.card-payment-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3%;
 }
 
 .label-input-privacy {
@@ -516,7 +559,7 @@ form h3 {
     /* text-decoration: none; */
 }
 
-.card-payment {
+.card-types-container {
     width: 45%;
 }
 
@@ -530,11 +573,271 @@ form h3 {
     width: 10%;
 }
 
+
+
 .security-privacy-container {
     padding: 3% 5%;
     background: #FFF;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+.bank-transfer-payment-container {
+    display: none;
+}
+
+.bank-transfer-payment-container p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 3%;
+}
+
+.bank-transfer-payment-details {
+    display: flex;
+    gap: 5%;
+}
+
+.bank-transfer-payment-wrapper {
+    display: flex;
+    gap: 10%;
+    width: 40%;
+}
+
+.payment-img {
+    width: 15%;
+}
+
+.bank-transfer-payment-info {
+    display: flex;
+    gap: 10%;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+.bank-transfer-payment p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15%;
+}
+
+.bank-transfer-account p {
+    color: var(--Pry-color, #0E811B);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20%;
+}
+
+.ussd-payment-container {
+    display: none;
+}
+
+.ussd-payment-container p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    /* margin-top: 3%; */
+}
+
+.ussd-transfer-details {
+    display: flex;
+    gap: 5%;
+}
+
+.ussd-transfer-container {
+    width: 60%;
+}
+
+.ussd-transfer-wrapper {
+    display: flex;
+    gap: 5%;
+    /* width: 60%; */
+    margin-bottom: 3%;
+}
+
+.ussd-payment-img {
+    width: 10%;
+}
+
+.ussd-transfer-info {
+    display: flex;
+    gap: 3%;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+.ussd-transfer p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15%;
+}
+
+.ussd-transfer-account p {
+    color: var(--Pry-color, #0E811B);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20%;
+}
+
+.confirm-transfer-container {
+    display: flex;
+    gap: 5%;
+}
+
+.confirm-transfer-container p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.confirm-transfer-container span {
+    display: flex;
+    gap: 10%;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.confirm-transfer-container span a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.confirm-transfer-container span a:hover {
+    color: #0E811B;
+}
+
+.ussd-card-types-container {
+    width: 45%;
+}
+
+.ussd-card-types {
+    display: flex;
+    justify-content: start;
+    gap: 7%;
+}
+
+.ussd-card-types img {
+    width: 12%;
+}
+
+.paypal-payment-container {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+ }
+
+ .paypal-payment-details {
+    width: 47%;
+}
+
+.paypal-payment-label-input label {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    margin-bottom: 1%;
+}
+
+.paypal-payment-label-input input {
+    border: 1px solid #000;
+    background: #FFF;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    padding: 2%;
+    outline: 0;
+    margin-bottom: 3%;
+}
+
+/* .donation-btn-cont {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    align-items: center;
+    background-color: #0E811B;
+    color: #fff;
+    border: none;
+    padding: 1% 5%;
+    transition: ease 0.2s;
+    text-decoration: none;
+    border-radius: 6px;
+    position: relative;
+    margin-top: 5%;
+}
+
+.donation-btn-cont:hover {
+    background-color: #0c6c17;
+}
+
+.donation-btn-cont img {
+    width: 8%;
+    vertical-align: middle;
+    animation: ease-in-out;
+}
+
+.donation-btn-cont:hover img {
+    display: none;
+}
+
+.donation-btn-cont .btn-img-animation {
+    display: none;
+    position: absolute;
+    left: 5%;
+    animation: scroll 2s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.donation-btn-cont:hover .btn-img-animation {
+    display: block;
+}
+
+.donation-btn-cont p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    /* text-decoration: none; */
+} */
+
+.paypal-card-types-container {
+    width: 45%;
+}
+
+/* .paypal-card-types {
+    display: flex;
+    justify-content: start;
+    gap: 10%;
+} */
+
+.paypal-card-types img {
+    width: 20%;
+}
+
 
 .security-privacy-container h3 {
     color: #000;
@@ -567,4 +870,59 @@ form h3 {
     font-size: 20px;
     font-weight: 500;
     line-height: 44px; /* 220% */
+}
+
+/* JavaScript Functionality*/
+.card-inactive {
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #000;
+}
+
+.payment-active {
+    background: #0E811B;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+}
+
+.card-inactive.inactive {
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #000;
+}
+
+.bank-active.active {
+    background: #0E811B;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+}
+
+.ussd-active.active {
+    background: #0E811B;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+}
+
+.paypal-active.active {
+    background: #0E811B;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+}
+
+.card-payment-container.hide {
+    display: none;
+}
+
+.bank-transfer-payment-container.hide {
+    display: block;
+}
+
+.ussd-payment-container.hide {
+    display: block;
+}
+
+.paypal-payment-container.hide {
+    display: flex;
 }

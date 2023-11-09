@@ -85,8 +85,12 @@
                     </div>
     
                     <div class="agreement">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="" id="" class="dedicated-checkbox">
                         <span>Dedicate this donation</span>
+                    </div>
+
+                    <div class="dedicated-input">
+                        <input type="text" name="" id="" placeholder="Name of someone special to me">
                     </div>
                 </div>
                 <div class="donation-img">
@@ -164,6 +168,8 @@
                     </div>
                 </div>
 
+                <div class="form-overlay"></div>
+
                 <div class="anonymous">
                     <input type="checkbox" name="" id="">
                     <span>I'd prefer to make this donation anonymous</span>
@@ -176,25 +182,25 @@
             <p>Select your payment method</p>
 
             <div class="payment-method">
-                <button class="active-btn">Card Payment</button>
-                <button>Bank Transfer Payment</button>
-                <button>USSD Payment</button>
-                <button>USSD Payment</button>
+                <button class="card-payment card-inactive">Card Payment</button>
+                <button class="payment-active bank-active">Bank Transfer Payment</button>
+                <button class="payment-active ussd-active">USSD Payment</button>
+                <button class="payment-active paypal-active">Paypal</button>
             </div>
 
-            <div class="payment-form-container">
-                <div class="card-details">
-                    <div class="payment-label-input">
+            <div class="card-payment-container card">
+                <div class="card-payment-details">
+                    <div class="card-payment-label-input">
                         <label for="">Cardholder name</label>
                         <input type="text" name="name" id="name" placeholder="Cardholder name" required>
                     </div>
     
-                    <div class="payment-label-input">
+                    <div class="card-payment-label-input">
                         <label for="">Card number</label>
-                        <input type="text" name="name" id="name" placeholder="1234-1234-1234-1234" required>
+                        <input type="text" name="name" id="name" placeholder="0000-0000-0000-0000" required>
                     </div>
 
-                    <div class="payment-wrapper">
+                    <div class="card-payment-wrapper">
                         <div class="label-input-privacy">
                             <label for="">Expiry date</label>
                             <input type="text" name="name" id="name" placeholder="mm/dd" required>
@@ -216,13 +222,192 @@
                     </a>
                 </div>
 
-                <div class="card-payment">
+                <div class="card-types-container">
                     <p>We accept:</p>
 
                     <div class="card-types">
                         <img src="./assets/img/logo/mastercard.png" alt="">
                         <img src="./assets/img/logo/visaelectron.png" alt="">
                         <img src="./assets/img/logo/verve.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bank-transfer-payment-container bank">
+                <p>
+                    Transfer to the account number below using your bank's Internet <br>
+                    Banking Channel or Mobile App
+                </p>
+
+                <div class="bank-transfer-payment-details">
+                    <div class="bank-transfer-payment-wrapper">
+                        <div class="payment-img">
+                            <img src="./assets/img/logo/gtb-logo.png" alt="">
+                        </div>
+    
+                        <div class="bank-transfer-payment-info">
+                            <div class="bank-transfer-payment">
+                                <p>Account number:</p>
+                                <p>Account name:</p>
+                                <p>Account Type:</p>
+                                <p>Bank name:</p>
+                            </div>
+    
+                            <div class="bank-transfer-account">
+                                <p>074612348744</p>
+                                <p>Food For All</p>
+                                <p>Savings</p>
+                                <p>GTBank</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bank-transfer-payment-wrapper">
+                        <div class="payment-img">
+                            <img src="./assets/img/logo/firstbank-logo.png" alt="">
+                        </div>
+    
+                        <div class="bank-transfer-payment-info">
+                            <div class="bank-transfer-payment">
+                                <p>Account number:</p>
+                                <p>Account name:</p>
+                                <p>Account Type:</p>
+                                <p>Bank name:</p>
+                            </div>
+    
+                            <div class="bank-transfer-account">
+                                <p>074612348744</p>
+                                <p>Food For All</p>
+                                <p>Savings</p>
+                                <p>GTBank</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ussd-payment-container ussd">
+                <p>
+                    Dial the code below and follow the instructions to complete this <br>
+                    transaction with USSD
+                </p>
+
+                <div class="ussd-transfer-details">
+                    <div class="ussd-transfer-container">
+                        <div class="ussd-transfer-wrapper">
+                            <div class="ussd-payment-img">
+                                <img src="./assets/img/logo/gtb-logo.png" alt="">
+                            </div>
+        
+                            <div class="ussd-transfer-info">
+                                <div class="ussd-transfer">
+                                    <p>For GTBank users, Dial </p>
+                                </div>
+        
+                                <div class="ussd-transfer-account">
+                                    <p>*737*50212#</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ussd-transfer-wrapper">
+                            <div class="ussd-payment-img">
+                                <img src="./assets/img/logo/uba-logo.png" alt="">
+                            </div>
+        
+                            <div class="ussd-transfer-info">
+                                <div class="ussd-transfer">
+                                    <p>For UBA Bank users, Dial  </p>
+                                </div>
+        
+                                <div class="ussd-transfer-account">
+                                    <p>*919*42333#</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ussd-transfer-wrapper">
+                            <div class="ussd-payment-img">
+                                <img src="./assets/img/logo/firstbank-logo.png" alt="">
+                            </div>
+        
+                            <div class="ussd-transfer-info">
+                                <div class="ussd-transfer">
+                                    <p>For First Bank users, Dial </p>
+                                </div>
+        
+                                <div class="ussd-transfer-account">
+                                    <p>*894*34578#</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ussd-transfer-wrapper">
+                            <div class="ussd-payment-img">
+                                <img src="./assets/img/logo/access-bank-logo.png" alt="">
+                            </div>
+        
+                            <div class="ussd-transfer-info">
+                                <div class="ussd-transfer">
+                                    <p>For Access Bank users, Dial </p>
+                                </div>
+        
+                                <div class="ussd-transfer-account">
+                                    <p>*901*87901#</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="confirm-transfer-container">
+                            <p>
+                                Have you completed the payment? 
+                            </p>
+                            <span>
+                                <a href="">Yes</a>
+                                /
+                                <a href="">No</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="ussd-card-types-container">
+                        <p>We accept:</p>
+    
+                        <div class="ussd-card-types">
+                            <img src="./assets/img/logo/gtb-logo.png" alt="">
+                            <img src="./assets/img/logo/uba-logo.png" alt="">
+                            <img src="./assets/img/logo/firstbank-logo.png" alt="">
+                            <img src="./assets/img/logo/access-bank-logo.png" alt="">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paypal-payment-container paypal">
+                <div class="paypal-payment-details">
+                    <div class="paypal-payment-label-input">
+                        <label for="">Email address</label>
+                        <input type="text" name="name" id="name" placeholder="Email address" required>
+                    </div>
+    
+                    <div class="paypal-payment-label-input">
+                        <label for="">Password</label>
+                        <input type="text" name="name" id="name" placeholder="Password" required>
+                    </div>
+
+                    <a href="donation.html" class="donation-btn-cont">
+                        <img src="./assets/icons/streamline_interface-favorite-heart-reward-social-rating-media-heart-it-like-favorite-love.svg" alt="">
+                        <img src="./assets/icons/streamline_interface-favorite-heart-reward-social-rating-media-heart-it-like-favorite-love.png" alt="" class="btn-img-animation">
+                            <p>DONATE NOW</p>
+                    </a>
+                </div>
+
+                <div class="paypal-card-types-container">
+                    <p>We accept:</p>
+
+                    <div class="paypal-card-types">
+                        <img src="./assets/img/logo/paypal-logo.png" alt="">
                     </div>
                 </div>
             </div>

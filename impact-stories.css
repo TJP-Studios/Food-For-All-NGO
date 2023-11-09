@@ -49,23 +49,26 @@ img {
     margin: 2% auto;
 }
 
-.cart-link a {
+.cart-link {
     color: #0E811B;
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
     text-align: center;
-}
-
-.cart-link {
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
     width: 20%;
     padding: 1.5% 3%;
     margin: 3% auto 0 auto;
+    display: block;
 }
+
+.cart-link:hover {
+    color: #FFF;
+    background-color: #0E811B;}
+
 
 .our-stories-cart-container {
     margin: 3% 0%;
