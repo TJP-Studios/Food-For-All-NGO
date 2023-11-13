@@ -262,6 +262,125 @@ article h3 {
 }
 
 
+/*  */
+.testimony {
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #EFEFEF; */
+    margin: 0 5%;
+}
+
+.slide-container {
+    max-width: 1120px;
+    width: 100%; */
+    background-color: gray;
+    /* padding: 40px 0; */
+}
+
+.slide-content {
+    margin: 0 40px;
+    /* max-width: 1120px;
+    width: 100%; */
+}
+
+.card {
+    width: 95%;
+    border-radius: 25px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0E811B;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #0E811B;
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.card-image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0E811B;
+}
+
+.name {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 6%;
+}
+
+.description {
+    color: #000;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn {
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #0E811B;
+    border-radius: 6px;
+    margin: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0E811B;
+}
+
 
 
 /* Keyframe */
