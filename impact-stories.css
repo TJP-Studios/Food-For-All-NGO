@@ -207,6 +207,62 @@ article h3 {
     width: 10%;
 }
 
+.testimonials {
+    margin: 0% 5% 50% 0;
+    position: relative;
+}
+
+.testimonials h3 {
+    color: var(--BLACK, #0D0A0B);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 150px; /* 150% */
+}
+
+.testimonials-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    position: absolute;
+}
+
+.testimonials-container {
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    width: 40%;
+    padding: 3% 3% 5% 3%;
+}
+
+.testimonials-img {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.testimonials-img img {
+    border-radius: 50%;
+}
+
+.testimonials-container h5 {
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 6%;
+}
+
+.testimonials-container p {
+    color: #000;
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
 
 /* Keyframe */
 @keyframes fade {

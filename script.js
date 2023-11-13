@@ -26,6 +26,39 @@ dedicatedCheckbox.addEventListener('click', ()=> {
 })
 
 
+
+const oneTimeDonation = document.querySelector ('.one-time-donation-inactive')
+const monthlyDonation = document.querySelector ('.monthly-donation-active')
+const oneTimeDonationContainer = document.querySelector ('.one-time-donation-container')
+const monthlyDonationContainer = document.querySelector ('.monthly-donation-container')
+
+monthlyDonation.addEventListener('click', ()=> {
+    oneTimeDonation.classList.add('inactive');
+    monthlyDonation.classList.add('active');
+    
+
+    oneTimeDonationContainer.classList.add('hide')
+    monthlyDonationContainer.classList.add('hide')
+})
+
+oneTimeDonation.addEventListener('click', ()=> {
+    oneTimeDonation.classList.remove('inactive');
+    monthlyDonation.classList.remove('active');
+    
+
+    oneTimeDonationContainer.classList.remove('hide')
+    monthlyDonationContainer.classList.remove('hide')
+})
+
+
+const anonymousCheckboxInput = document.querySelector ('.anonymous-checkbox')
+const anonymousForm = document.querySelector ('form')
+
+anonymousCheckboxInput.addEventListener('click', ()=> {
+    anonymousForm.classList.toggle('hide');
+})
+
+
 const cardPaymentInactive = document.querySelector ('.card-inactive')
 const bankPaymentActive = document.querySelector ('.bank-active')
 const ussdPaymentActive = document.querySelector ('.ussd-active')
@@ -72,7 +105,7 @@ paypalPaymentActive.addEventListener('click', ()=> {
 })
 
 cardPaymentInactive.addEventListener('click', ()=> {
-    cardPaymentInactive.classList.add('inactive');
+    cardPaymentInactive.classList.remove('inactive');
     bankPaymentActive.classList.remove('active');
     ussdPaymentActive.classList.remove('active');
     paypalPaymentActive.classList.remove('active');
@@ -82,3 +115,6 @@ cardPaymentInactive.addEventListener('click', ()=> {
     ussdContainer.classList.remove('hide')
     paypalContainer.classList.remove('hide')
 })
+
+const anonymousCheckbox = document.querySelector ('.card-inactive')
+const hideform = document.querySelector ('.card-inactive')
