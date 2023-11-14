@@ -65,6 +65,7 @@ img {
     font-size: 20px;
     font-weight: 500;
     line-height: normal;
+    margin: 0 5%;
 }
 
 .contact-form {
@@ -75,7 +76,7 @@ img {
 form {
     background: var(--Pry-color, #0E811B);
     width: 50%;
-    padding: 0 5%;
+    padding: 3% 5%;
 }
 
 .name-input {
@@ -84,658 +85,141 @@ form {
 }
 
 .name-input input {
-    width: 45%;
-}
-
-.label-input label {
-    color: var(--WHITE, #FFF);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-    display: block;
-    margin-bottom: 2%;
-}
-
-.label-input label span {
-    color: red;
-    font-weight: 400;
-}
-
-.optional-input label {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.optional-input label span {
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.label-input input {
+    width: 46%;
     border: none;
     background: #FFF;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: normal;
-    width: 100%;
-    padding: 2%;
+    padding: 2% 3%;
     outline: 0;
 }
 
-.anonymous {
+form input {
+    border: none;
+    background: #FFF;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    padding: 2% 3%;
+    outline: 0;
     margin: 3% 0;
-    display: flex;
-    /* align-items: center; */
-    gap: 3%;
- }
- 
- .anonymous-checkbox {
-     height: 20px;
-     width: 20px;
- }
- 
- .anonymous span {
-    color: var(--WHITE, #FFF);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
- }
+}
 
- form.hide {
-    display: none;
- }
-
-
- /* .anonymous-checkbox {
-    margin: 3% 5%;
-    display: flex;
-    align-items: center;
-    gap: 1%;
- }
- 
- .anonymous-checkbox input {
-     height: 20px;
-     width: 20px;
- }
- 
- .anonymous-checkbox span {
-    color: var(--BLACK, #000);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
- } */
-
- .payment-container {
-    margin: 3% 0 0 0;
-    padding: 0 5% 3% 5%;
-    border-top: 0.5px solid #000;
-    border-bottom: 0.5px solid #000;
-    background: #FFF;
- }
- 
- .payment-container h3 {
-    color: #000;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 1%;
- }
-
- .payment-container p {
-    color: #000;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 2%;
- }
-
- .payment-method {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3%;
- }
-
- .payment-method button {
-    width: 20%;
-    padding: 1%;
-    border-radius: 10px;
-    background: #FFF;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+form textarea {
     border: none;
-    color: #000;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-    text-align: center;
-    cursor: pointer;
- }
-
- .payment-method button:hover {
-    background: #0E811B;
-    color: #FFF;
- }
-
- .payment-method .card-payment {
-    border-radius: 10px;
-    background: #0E811B;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
- }
-
- .card-payment-container {
-    display: flex;
-    justify-content: space-between;
-    /* display: none; */
- }
-
- .card-payment-details {
-    width: 47%;
-}
-
-.card-payment-label-input label {
-    color: #000;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-    display: block;
-    margin-bottom: 1%;
-}
-
-.card-payment-label-input input {
-    border: 1px solid #000;
     background: #FFF;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: normal;
     width: 100%;
-    padding: 2%;
+    padding: 2% 3%;
     outline: 0;
-    margin-bottom: 3%;
+    margin: 3% 0;
 }
 
-.card-payment-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.submit-btn a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    /* width: 20%; */
+    padding: 1.5% 3%;
 }
 
-.label-input-privacy {
+.submit-btn a:hover {
+    color: #FFF;
+    background-color: #0E811B;
+    border: 2px solid #FFF;
+}
+
+.contact-img {
     width: 50%;
 }
 
-.label-input-privacy label, .label-input-security label {
+.contact-info {
+    padding: 0 5%;
+}
+
+.contact-info p {
     color: #000;
     font-size: 20px;
     font-weight: 500;
     line-height: normal;
-    display: block;
-    margin-bottom: 2%;
 }
 
-.label-input-privacy input, .label-input-security input {
-    border: 1px solid #000;
-    background: #FFF;
-    color: #000;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    width: 100%;
-    outline: 0;
+.contact-details {
+    margin: 2% 0;
 }
 
-.label-input-privacy input {
-    padding: 4% 5%;
-}
-
-.label-input-security {
-    width: 40%;
-}
-
-.security-question {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.security-question input {
-    padding: 5% 5%;
-    width: 80%;
-}
-
-.security-question img {
-    width: 10%;
-}
-
-.donation-btn-cont {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    gap: 2%;
-    align-items: center;
-    background-color: #0E811B;
-    color: #fff;
-    border: none;
-    padding: 1% 5%;
-    transition: ease 0.2s;
-    text-decoration: none;
-    border-radius: 6px;
-    position: relative;
-    margin-top: 5%;
-}
-
-.donation-btn-cont:hover {
-    background-color: #0c6c17;
-}
-
-.donation-btn-cont img {
-    width: 8%;
-    vertical-align: middle;
-    animation: ease-in-out;
-}
-
-.donation-btn-cont:hover img {
-    display: none;
-}
-
-.donation-btn-cont .btn-img-animation {
-    display: none;
-    position: absolute;
-    left: 5%;
-    animation: scroll 2s linear infinite;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
-}
-
-.donation-btn-cont:hover .btn-img-animation {
-    display: block;
-}
-
-.donation-btn-cont p {
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-    /* text-decoration: none; */
-}
-
-.card-types-container {
-    width: 45%;
-}
-
-.card-types {
-    display: flex;
-    justify-content: start;
-    gap: 10%;
-}
-
-.card-types img {
-    width: 10%;
-}
-
-
-
-.security-privacy-container {
-    padding: 3% 5%;
-    background: #FFF;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.bank-transfer-payment-container {
-    display: none;
-}
-
-.bank-transfer-payment-container p {
-    color: #000;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 3%;
-}
-
-.bank-transfer-payment-details {
-    display: flex;
-    gap: 5%;
-}
-
-.bank-transfer-payment-wrapper {
-    display: flex;
-    gap: 10%;
-    width: 40%;
-}
-
-.payment-img {
-    width: 15%;
-}
-
-.bank-transfer-payment-info {
-    display: flex;
-    gap: 10%;
-    /* justify-content: space-between; */
-    width: 100%;
-}
-
-.bank-transfer-payment p {
-    color: #000;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 15%;
-}
-
-.bank-transfer-account p {
-    color: var(--Pry-color, #0E811B);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 20%;
-}
-
-.ussd-payment-container {
-    display: none;
-}
-
-.ussd-payment-container p {
-    color: #000;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: normal;
-    /* margin-top: 3%; */
-}
-
-.ussd-transfer-details {
-    display: flex;
-    gap: 5%;
-}
-
-.ussd-transfer-container {
-    width: 60%;
-}
-
-.ussd-transfer-wrapper {
-    display: flex;
-    gap: 5%;
-    /* width: 60%; */
-    margin-bottom: 3%;
-}
-
-.ussd-payment-img {
-    width: 10%;
-}
-
-.ussd-transfer-info {
-    display: flex;
-    gap: 3%;
-    /* justify-content: space-between; */
-    width: 100%;
-}
-
-.ussd-transfer p {
-    color: #000;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 15%;
-}
-
-.ussd-transfer-account p {
-    color: var(--Pry-color, #0E811B);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 20%;
-}
-
-.confirm-transfer-container {
-    display: flex;
-    gap: 5%;
-}
-
-.confirm-transfer-container p {
-    color: #000;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.confirm-transfer-container span {
-    display: flex;
-    gap: 10%;
-    color: #000;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.confirm-transfer-container span a {
-    color: #000;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration: none;
-}
-
-.confirm-transfer-container span a:hover {
+.contact-details h5 {
     color: #0E811B;
-}
-
-.ussd-card-types-container {
-    width: 45%;
-}
-
-.ussd-card-types {
-    display: flex;
-    justify-content: start;
-    gap: 7%;
-}
-
-.ussd-card-types img {
-    width: 12%;
-}
-
-.paypal-payment-container {
-    display: flex;
-    justify-content: space-between;
-    display: none;
- }
-
- .paypal-payment-details {
-    width: 47%;
-}
-
-.paypal-payment-label-input label {
-    color: #000;
-    font-size: 20px;
+    text-decoration: underline;
+    font-size: 24px;
     font-weight: 500;
     line-height: normal;
-    display: block;
     margin-bottom: 1%;
 }
 
-.paypal-payment-label-input input {
-    border: 1px solid #000;
-    background: #FFF;
+.contact-details p {
     color: #000;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-details a {
+    color: var(--Pry-color, #0E811B);
+    font-size: 20px;
     font-weight: 500;
     line-height: normal;
-    width: 100%;
-    padding: 2%;
-    outline: 0;
+    text-decoration: none;
+}
+
+.contact-address-container {
+    margin-top: 2%;
+    display: flex;
+    gap: 10%;
+}
+
+.contact-address h4 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+.contact-socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4%;
+    margin-top: 5%;
     margin-bottom: 3%;
 }
 
-/* .donation-btn-cont {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    gap: 2%;
+.contact-socials img {
+    /* width: 45%; */
+    /* display: block;
+    margin: 0 auto; */
+}
+
+.contact-socials a {
+    /* display: inline-flex;
     align-items: center;
-    background-color: #0E811B;
-    color: #fff;
-    border: none;
-    padding: 1% 5%;
-    transition: ease 0.2s;
-    text-decoration: none;
-    border-radius: 6px;
-    position: relative;
-    margin-top: 5%;
-}
-
-.donation-btn-cont:hover {
-    background-color: #0c6c17;
-}
-
-.donation-btn-cont img {
-    width: 8%;
-    vertical-align: middle;
-    animation: ease-in-out;
-}
-
-.donation-btn-cont:hover img {
-    display: none;
-}
-
-.donation-btn-cont .btn-img-animation {
-    display: none;
-    position: absolute;
-    left: 5%;
-    animation: scroll 2s linear infinite;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
-}
-
-.donation-btn-cont:hover .btn-img-animation {
-    display: block;
-}
-
-.donation-btn-cont p {
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-    /* text-decoration: none; */
-} */
-
-.paypal-card-types-container {
-    width: 45%;
-}
-
-/* .paypal-card-types {
-    display: flex;
-    justify-content: start;
-    gap: 10%;
-} */
-
-.paypal-card-types img {
-    width: 20%;
-}
-
-
-.security-privacy-container h3 {
-    color: #000;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: normal;
-    /* margin-bottom: 1%; */
-}
-
-.security-privacy-container p {
-    color: #000;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.about-us {
-    margin: 3% 5%;
-}
-
-.about-us h5 {
-    color: #000;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.about-us p {
-    color: #000;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 44px; /* 220% */
-}
-
-/* JavaScript Functionality*/
-.card-inactive {
-    background: #FFF;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    border: none;
-    color: #000;
-}
-
-.payment-active {
-    background: #0E811B;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-}
-
-.card-inactive.inactive {
-    background: #FFF;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    border: none;
-    color: #000;
-}
-
-.bank-active.active {
-    background: #0E811B;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-}
-
-.ussd-active.active {
-    background: #0E811B;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-}
-
-.paypal-active.active {
-    background: #0E811B;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-}
-
-.card-payment-container.hide {
-    display: none;
-}
-
-.bank-transfer-payment-container.hide {
-    display: block;
-}
-
-.ussd-payment-container.hide {
-    display: block;
-}
-
-.paypal-payment-container.hide {
-    display: flex;
+    justify-content: center; */
+    width: 2%;
+    /* height: 30%; */
+    /* border: 1px solid #0E811B; */
+    /* border-radius: 50%; */
+    /* padding: 2%; */
 }

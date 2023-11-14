@@ -296,6 +296,12 @@ footer {
     border-radius: 10px;
 }
 
+.contact-details-left a:hover, .contact-details-right a:hover {
+    background-color: #FFF;
+    color: #0E811B;
+    border: 1px solid #0E811B;
+}
+
 .footer-socials {
     display: flex;
     align-items: center;
