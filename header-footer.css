@@ -158,7 +158,7 @@ footer {
     color: #FFF;
     font-size: 18px;
     font-weight: 500;
-    line-height: 100%; /* 16px */
+    line-height: 24px; 100%
     /* text-transform: capitalize; */
 }
 
@@ -195,7 +195,7 @@ footer {
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
-    line-height: normal;
+    line-height: 24px;
 }
 
 .contact-container {
@@ -252,7 +252,7 @@ footer {
     color: #000;
     font-size: 18px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 24px;
     margin: 1% 0 25% 0;
 }
 
@@ -260,7 +260,7 @@ footer {
     color: #000;
     font-size: 18px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 24px;
     margin: 0% 0 7% 0;
     text-align: justify;
 }
@@ -269,7 +269,7 @@ footer {
     color: #000;
     font-size: 18px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 24px;
     margin: 1% 0 15% 0;
 }
 
@@ -507,13 +507,12 @@ footer {
 .donate-footer p {
     font-size: 16px;
     font-weight: 500;
-    line-height: 100%; /* 16px */
     /* text-transform: capitalize; */
     text-align: justify;
 }
 
 .donate-btn {
-    width: 45%;
+    width: 40%;
     display: flex;
     justify-content: center;
     gap: 5%;
@@ -536,11 +535,10 @@ footer {
     color: #FFF;
     font-size: 14px;
     font-weight: 500;
-    line-height: normal;
 }
 
 .contact-container {
-    display: unset;
+    flex-direction: column;
     justify-content: space-between;
     align-items: start;
     padding: 0 5%;
@@ -569,54 +567,54 @@ footer {
 }
 
 .contact-details-left h5 {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
     margin-bottom: 3%;
 }
 
 .contact-details-middle h5 {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
     margin-bottom: 3%;
     text-align: unset;
 }
 
 .contact-details-right h5 {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
     margin-bottom: 3%;
 }
 
 .contact-details-left p {
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: normal;
     margin: 1% 0 10% 0;
 }
 
 .contact-details-middle p {
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: normal;
     margin: 0% 0 7% 0;
     text-align: justify;
 }
 
 .contact-details-right p {
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: normal;
     margin: 1% 0 10% 0;
 }
 
 .contact-details-left a {
     text-decoration: none;
     color: #FFF;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: normal;
     background-color: #0E811B;
-    padding: 3%;
+    padding: 2%;
     border-radius: 10px;
 }
 
@@ -624,11 +622,11 @@ footer {
 .contact-details-right a {
     text-decoration: none;
     color: #FFF;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: normal;
     background-color: #0E811B;
-    padding: 3%;
+    padding: 2%;
     border-radius: 10px;
 }
 
@@ -641,8 +639,19 @@ footer {
     margin-bottom: 5%;
 }
 
-.footer-socials img {
-    width: 6%;
+.footer-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    /* height: 30%; */
+    border: 1px solid #0E811B;
+    border-radius: 50%;
+    padding: 2%;
+}
+
+.footer-socials a:hover {
+    box-shadow: 0px 0px 12px 0px #0E811B;
 }
 
 .middle p {
@@ -653,7 +662,6 @@ footer {
     color: #000;
     font-size: 18px;
     font-weight: 400;
-    line-height: normal;
     width: 50%;
     text-align: center;
 }
@@ -672,7 +680,7 @@ footer {
     display: flex;
     align-items: center;
    justify-content: space-between;
-   animation: scroll 8s linear infinite reverse;
+   animation: slideshow 8s linear infinite reverse;
    animation-fill-mode: both;
 }
 
