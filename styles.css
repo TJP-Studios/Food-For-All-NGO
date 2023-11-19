@@ -16,6 +16,10 @@ img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .home-hero {
     background-image: url(./assets/img/pic/image-1.png);
     /* opacity: 0.9; */
@@ -66,6 +70,10 @@ img {
     font-size: 24px;
     font-weight: 500;
     line-height: 40px; /* 200% */
+}
+
+.mobile-form {
+    display: none;
 }
 
 form {
@@ -164,6 +172,7 @@ form {
 
 .donation-form-input {
     position: relative;
+    margin-bottom: 15%;
 }
 
 .donation-form-input input {
@@ -483,6 +492,7 @@ form {
     font-weight: 500;
     line-height: 40px; /* 200% */
     text-align: justify;
+    margin-bottom: 5%;
 }
 
 
@@ -497,9 +507,8 @@ form {
     background: #FFF;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
     width: 32%;
-    padding: 2% 0 2% 3%;
-    margin-top: 3%;
-    display: block;
+    padding: 2% 3%;
+    text-align: center;
 }
 
 .cart-link:hover {
@@ -507,18 +516,19 @@ form {
     background-color: #0E811B;}
 
 article {
-    margin: 5%;
+    margin: 5% 5% 1% 5%;
 }
 
 article h3 {
     color: var(--Pry-color, #0E811B);
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 600;
     line-height: normal;
     background: var(--WHITE, #FFF);
-    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
-    margin-bottom: 5%;
-    width: 75%;
+    /* box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25); */
+    margin-bottom: 2%;
+    /* width: 75%; */
+    /* padding-right: 20%; */
 }
 
 .home-article-container {
@@ -536,20 +546,22 @@ article h3 {
    padding: 2% 5%;
 }
 
-.home-article-txt h5 {
+.home-article-txt a {
     color: #0E811B;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: normal;
     margin: 3% 0;
+    text-decoration: none;
 }
 
 .home-article-txt p {
     color: #000;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     line-height: normal;
     text-align: justify;
+    margin-top: 3%;
 }
 
 .home-article-link {
@@ -566,12 +578,12 @@ article h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5%;
+    margin: 0% 5%;
 }
 
 .line-btn hr {
     width: 85%;
-    border: 2px solid #0E811B;
+    border: 1px solid #0E811B;
 }
 
 .line-btn a {
@@ -583,6 +595,8 @@ article h3 {
     border: 1px solid #0E811B;
     padding: 1%;
     border-radius: 6px;
+    width: 15%;
+    text-align: center;
 }
 
 .line-btn a:hover {
@@ -591,7 +605,7 @@ article h3 {
 }
 
 .mission-target {
-    margin: 5%;
+    margin: 3% 5% 0% 5%;
     background-color: #0E811B;
     padding: 3%;
 }
@@ -666,7 +680,7 @@ hr {
 
 .our-cart-last h5 {
     color: #0E811B;
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 500;
     line-height: normal;
     margin-bottom: 3%;
@@ -678,12 +692,13 @@ hr {
     font-weight: 500;
     line-height: 40px; /* 200% */
     text-align: justify;
+    margin-bottom: 5%;
 }
 
 .our-cart-last {
     display: flex;
     justify-content: flex-end;
-    margin: 5% 5% 20% 5%;
+    margin: 5%;
     position: relative;
 }
 
@@ -704,12 +719,12 @@ hr {
 
 
 .fact-check-container {
-    margin: 5%;
+    margin: 7% 5% 5% 5%;
 }
 
 .fact-check-container h3 {
     color: var(--Pry-color, #0E811B);
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 600;
     line-height: 58px; /* 120.833% */
     margin-bottom: 2%;
@@ -725,7 +740,7 @@ hr {
 }
 
 .fact-check {
-    width: 31%;
+    width: 30%;
     background-color: #FFF;
     box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
     padding: 10% 2%;
@@ -742,7 +757,7 @@ hr {
 
 .fact-check h5 {
     /* color: var(--BLACK, #0D0A0B); */
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 58px; /* 120.833% */
     text-transform: capitalize;
@@ -752,7 +767,7 @@ hr {
 .fact-check p {
     /* color: #000; */
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 32px; /* 133.333% */
     text-transform: capitalize;
@@ -856,13 +871,21 @@ hr {
         width: 80%;
     }
     
+    .mobile-form {
+        display: block;
+    }
+
+    .desktop-form {
+        display: none;
+    }
+
     form {
         width: 100%;
         background-color: #FFF;
         border-radius: 40px;
         padding: 3% 5% 5% 5%;
         z-index: 2;
-        margin-top: 15%;
+        margin-top: 5%;
     }
     
     .home-form-donation-caption {
@@ -873,11 +896,11 @@ hr {
     }
     
     .home-form-donation-caption img {
-        width: 4%;
+        width: 6%;
     }
     
     .home-form-donation-caption h6 {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .donation-form-title {
@@ -925,6 +948,7 @@ hr {
     
     .donation-form-input {
         position: relative;
+        margin-bottom: 15%;
     }
     
     .donation-form-input input {
@@ -1037,7 +1061,7 @@ hr {
     }
 
     .home-partners {
-        margin: 100% 0 5% 0;
+        margin: 10% 0 10% 0;
         padding: 2% 5%;
         background: #FFF;
         box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
@@ -1089,23 +1113,24 @@ hr {
     }
     
     .our-mission {
-        display: flex;
-        flex-direction: column;
+        display: unset;
+        /* flex-direction: column; */
         margin: 5%;
-        position: static;
+        position: unset;
     }
     
     .our-mission-img {
         width: 100%;
+        background-color: #0E811B;
     }
     
     .our-mission-txt {
         width: 100%;
         opacity: 1;
         background: #0E811B;
-        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: none;
         padding: 3%;
-        position: static;
+        position: unset;
         right: 0;
         bottom: 0;
     }
@@ -1127,19 +1152,20 @@ hr {
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-end;
-        margin: 5% 5% 0 5%;
+        margin: 5%;
         position: static;
     }
     
     .our-work-img {
         width: 100%;
+        background-color: #0E811B;
     }
     
     .our-work-txt {
         width: 100%;
         opacity: 1;
         background: #0E811B;
-        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: none;
         padding: 3%;
         position: static;
         left: 0%;
@@ -1173,15 +1199,15 @@ hr {
     }
     
     .stats-img-1 {
-        width: 15%;
+        width: 30%;
     }
     
     .stats-img-2 {
-        width: 15%;
+        width: 25%;
     }
     
     .stats-img-3 {
-        width: 12%;
+        width: 20%;
     }
     
     .stats-details p {
@@ -1205,7 +1231,7 @@ hr {
         width: 100%;
         opacity: 1;
         background: #FFF;
-        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: none;
         padding: 3%;
         position: static;
         right: 0%;
@@ -1213,7 +1239,7 @@ hr {
     }
     
     .our-cart-combact-hunger-txt h5 {
-        font-size: 24px;
+        font-size: 18px;
         margin-bottom: 3%;
     }
     
@@ -1222,12 +1248,13 @@ hr {
         font-size: 14px;
         line-height: normal;
         text-align: justify;
+        margin-bottom: 10%;
     }
     
     
     .cart-link {
         color: #0E811B;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         line-height: normal;
         text-decoration: none;
@@ -1235,10 +1262,10 @@ hr {
         border-radius: 10px;
         background: #FFF;
         box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
-        width: 35%;
-        padding: 2% 3% 2% 3%;
+        width: unset;
+        padding: 3% 5%;
         margin-top: 3%;
-        display: block;
+        display: unset;
     }
     
     .cart-link:hover {
@@ -1251,7 +1278,7 @@ hr {
     
     article h3 {
         color: var(--Pry-color, #0E811B);
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 600;
         line-height: normal;
         background: var(--WHITE, #FFF);
@@ -1303,12 +1330,15 @@ hr {
     }
     
     .line-btn hr {
-        width: 74%;
-        border: 2px solid #0E811B;
+        width: 60%;
+        border: 1px solid #0E811B;
     }
     
     .line-btn a {
         font-size: 14px;
+        padding: 2% 2%;
+        width: 40%;
+        text-align: center;
     }
     
     .line-btn a:hover {

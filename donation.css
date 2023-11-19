@@ -230,6 +230,32 @@ img {
     color: #FFF;
 }
 
+.donation-btn-left.active, .donation-btn-middle.active, .donation-btn-right.active {
+    border: none;
+    background: #0E811B;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    width: 30%;
+    padding: 2% 5%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.donation-monthly-btn-left.active, .donation-monthly-btn-middle.active, .donation-monthly-btn-right.active {
+    border: none;
+    background: #0E811B;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    width: 30%;
+    padding: 2% 5%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
 .donation-btn-input {
     position: relative;
 }
@@ -283,6 +309,7 @@ img {
 .agreement input {
     height: 20px;
     width: 20px;
+    cursor: pointer;
 }
 
 .agreement span {
@@ -303,12 +330,29 @@ img {
     padding: 2% 5%;
     outline: 0;
 }
+.dedicated-input-monthly input {
+    border: 1px solid #000;
+    background: #FFF;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    width: 50%;
+    padding: 2% 5%;
+    outline: 0;
+}
 
 .dedicated-input {
     display: none;
 }
+.dedicated-input-monthly {
+    display: none;
+}
 
 .dedicated-input.visible {
+    display: block;
+}
+.dedicated-input-monthly.visible {
     display: block;
 }
 
@@ -355,6 +399,7 @@ img {
 
 .label-input {
     width: 45%;
+    position: relative;
 }
 
 .label-input label {
@@ -394,6 +439,33 @@ img {
     padding: 2%;
     outline: 0;
 }
+
+.form-tool-tip {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    display: none;
+    transition: opacity 0.15s;
+}
+
+.label-input:hover .form-tool-tip {
+    display: block;
+    pointer-events: none;
+    white-space: nowrap;
+    border: none;
+    color: #FFF;
+    background-color: #0E811B;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: normal;
+    /* width: 50%; */
+    padding: 0.5% 1%;
+    /* border-radius: 50px; */
+}
+
+.label-input:hover ::placeholder{
+    visibility: hidden;
+ }
 
 .anonymous {
     margin: 3% 0;
@@ -506,6 +578,7 @@ img {
 
  .card-payment-details {
     width: 47%;
+    position: relative;
 }
 
 .card-payment-label-input label {
@@ -579,8 +652,73 @@ img {
     width: 80%;
 }
 
-.security-question img {
+.security-question-img {
     width: 10%;
+    cursor: pointer;
+}
+
+.cvv-overlay {
+    display: none;
+    background-color: #0E811B;
+    width: 50%;
+    padding: 4% 0 4% 0;
+    /* scale: 60%; */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cvv-overlay.hide {
+    display: block;
+}
+
+.black-bg {
+    background-color: #000;
+    padding: 4%;
+}
+
+.cvv-overlay h6 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin: 3% 0;
+}
+
+.cvv-num {
+    background-color: #FFF;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1% 3%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2%;
+}
+
+.cvv-num span {
+    color: #000;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    /* text-align: right; */
+}
+
+.red-circle {
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 1%;
+}
+
+.cvv-overlay p {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 2%;
 }
 
 .donation-btn-cont {
@@ -668,7 +806,7 @@ img {
     display: none;
 }
 
-.bank-transfer-payment-container p {
+.bank-transfer-payment-container .bank-trans {
     color: #000;
     font-size: 16px;
     font-weight: 700;
@@ -696,8 +834,12 @@ img {
     display: flex;
     gap: 10%;
     /* justify-content: space-between; */
-    width: 100%;
+    width: 80%;
 }
+
+/* .bank-transfer-payment {
+    width: 55%;
+} */
 
 .bank-transfer-payment p {
     color: #000;
@@ -707,19 +849,29 @@ img {
     margin-bottom: 15%;
 }
 
+/* .bank-transfer-account {
+    width: 40%;
+} */
+
 .bank-transfer-account p {
     color: var(--Pry-color, #0E811B);
     font-size: 16px;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 20%;
+    margin-bottom: 12%;
+}
+
+.copy-img {
+    width: 8%;
+    margin-left: 2%;
+    cursor: pointer;
 }
 
 .ussd-payment-container {
     display: none;
 }
 
-.ussd-payment-container p {
+.ussd-payment-container .ussd-trans {
     color: #000;
     font-size: 20px;
     font-weight: 700;
@@ -750,9 +902,9 @@ img {
 
 .ussd-transfer-info {
     display: flex;
-    gap: 3%;
+    gap: 5%;
     /* justify-content: space-between; */
-    width: 100%;
+    width: 85%;
 }
 
 .ussd-transfer p {
@@ -1076,7 +1228,7 @@ img {
     }
     
     .monthly-btn:hover {
-        border-left: 3px solid #FFF;
+        border-left: 1px solid #000;
         border-right: none;
         border-top: none;
         border-bottom: none;
@@ -1159,6 +1311,19 @@ img {
         background: #0E811B;
         color: #FFF;
     }
+
+    .donation-btn-left.active, .donation-btn-middle.active, .donation-btn-right.active {
+        border: none;
+        background: #0E811B;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        width: 30%;
+        padding: 2% 5%;
+        border-radius: 6px;
+        cursor: pointer;
+    }
     
     .donation-btn-input {
         position: relative;
@@ -1233,6 +1398,17 @@ img {
         padding: 2% 5%;
         outline: 0;
     }
+    .dedicated-input-monthly input {
+        border: 1px solid #000;
+        background: #FFF;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        width: 100%;
+        padding: 2% 5%;
+        outline: 0;
+    }
     
     .dedicated-input {
         display: none;
@@ -1250,7 +1426,7 @@ img {
     .donation-img p {
         position: absolute;
         bottom: -5%;
-        left: 11%;
+        left: 14%;
         color: var(--WHITE, #FFF);
         font-size: 14px;
         font-weight: 500;
@@ -1326,6 +1502,29 @@ img {
         outline: 0;
         margin-bottom: 3%;
     }
+
+    .form-tool-tip {
+        position: absolute;
+        top: -40%;
+        left: 5%;
+        display: none;
+        transition: opacity 0.15s;
+    }
+    
+    .label-input:hover .form-tool-tip {
+        display: block;
+        pointer-events: none;
+        white-space: nowrap;
+        border: none;
+        color: #FFF;
+        background-color: #0E811B;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: normal;
+        /* width: 50%; */
+        padding: 0.5% 1%;
+        /* border-radius: 50px; */
+    }
     
     .anonymous {
         margin: 3% 0;
@@ -1372,9 +1571,9 @@ img {
     
      .payment-container {
         margin: 3% 0 0 0;
-        padding: 0 5% 3% 5%;
+        padding: 0 0% 3% 0%;
         border-top: 0.5px solid #000;
-        border-bottom: 0.5px solid #000;
+        border-bottom: none;
         background: #FFF;
         margin-top: 5%;
      }
@@ -1384,7 +1583,7 @@ img {
         font-size: 24px;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 1%;
+        margin: 0 5% 1% 5%;
      }
     
      .payment-container p {
@@ -1392,18 +1591,20 @@ img {
         font-size: 16px;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 2%;
+        margin: 0 5% 2% 5%;
      }
     
      .payment-method {
         display: flex;
-        justify-content: space-between;
+        justify-content: unset;
+        gap: 5%;
         margin-bottom: 3%;
         margin-top:5%;
+        width: 300%;
      }
     
      .payment-method button {
-        width: 50%;
+        width: 40%;
         padding: 1%;
         border-radius: 10px;
         background: #FFF;
@@ -1442,6 +1643,7 @@ img {
     
      .card-payment-details {
         width: 100%;
+        margin: 0 5% 0% 5%;
     }
     
     .card-payment-label-input label {
@@ -1520,7 +1722,7 @@ img {
     }
     
     .donation-btn-cont {
-        width: 70%;
+        width: 92%;
         display: flex;
         justify-content: center;
         gap: 2%;
@@ -1586,7 +1788,7 @@ img {
         display: flex;
         justify-content: start;
         gap: 10%;
-        margin-bottom: 5%;
+        margin: 0 5% 5% 5%;
     }
     
     .card-types img {
@@ -1605,7 +1807,7 @@ img {
         display: none;
     }
     
-    .bank-transfer-payment-container p {
+    .bank-transfer-payment-container .bank-trans {
         color: #000;
         font-size: 14px;
         font-weight: 700;
@@ -1661,7 +1863,7 @@ img {
         display: none;
     }
     
-    .ussd-payment-container p {
+    .ussd-payment-container .ussd-trans {
         color: #000;
         font-size: 16px;
         font-weight: 700;
@@ -1687,19 +1889,19 @@ img {
     }
     
     .ussd-payment-img {
-        width: 25%;
+        width: 10%;
     }
     
     .ussd-transfer-info {
         display: flex;
         gap: 3%;
         /* justify-content: space-between; */
-        width: 100%;
+        width: 85%;
     }
     
     .ussd-transfer p {
         color: #000;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 700;
         line-height: normal;
         margin-bottom: 15%;
@@ -1707,7 +1909,7 @@ img {
     
     .ussd-transfer-account p {
         color: var(--Pry-color, #0E811B);
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 700;
         line-height: normal;
         margin-bottom: 20%;
@@ -1803,14 +2005,14 @@ img {
     } */
     
     .paypal-card-types img {
-        width: 20%;
+        width: 40%;
     }
     
     
     .security-privacy-container h3 {
         color: #000;
         font-size: 24px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: normal;
         margin-bottom: 3%;
     }

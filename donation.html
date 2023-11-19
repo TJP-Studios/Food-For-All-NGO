@@ -14,11 +14,11 @@
         </div>
         <nav>
             <div class="nav-links">
-            <a href="">HUNGER IN NIGERIA</a>
+            <a href="index.html">HUNGER IN NIGERIA</a>
             <a href="partners/partners.html">GET INVOLVED</a>
             <a href="impact-stories.html">IMPACT STORIES</a>
-            <a href="">FIND A FOOD BANK</a>
-            <a href="">HUNGER BLOG</a>
+            <a href="food-bank.html">FIND A FOOD BANK</a>
+            <a href="hunger-blog.html">HUNGER BLOG</a>
             </div>
             <div class="header-btn">
                 <a href="" class="header-btn-img">
@@ -42,6 +42,7 @@
             <a href="">FIND A FOOD BANK</a>
             <a href="hunger-blog.html">HUNGER BLOG</a>
     </div>
+
 
     <main>
         <section class="donation-hero">
@@ -85,9 +86,9 @@
                     </p>
 
                     <div class="donation-btn-selection">
-                        <button>$10</button>
-                        <button>$40</button>
-                        <button>$80</button>
+                        <button class="donation-btn-left">$10</button>
+                        <button class="donation-btn-middle">$40</button>
+                        <button class="donation-btn-right">$80</button>
                     </div>
     
                     <div class="donation-btn-input">
@@ -126,9 +127,9 @@
                     </p>
 
                     <div class="donation-btn-selection">
-                        <button>$10</button>
-                        <button>$40</button>
-                        <button>$80</button>
+                        <button class="donation-monthly-btn-left">$10</button>
+                        <button class="donation-monthly-btn-middle">$40</button>
+                        <button class="donation-monthly-btn-right">$80</button>
                     </div>
     
                     <div class="donation-btn-input">
@@ -139,11 +140,11 @@
                     </div>
     
                     <div class="agreement">
-                        <input type="checkbox" name="" id="" class="dedicated-checkbox">
+                        <input type="checkbox" name="" id="" class="dedicated-checkbox-monthly">
                         <span>Dedicate this donation</span>
                     </div>
 
-                    <div class="dedicated-input">
+                    <div class="dedicated-input-monthly">
                         <input type="text" name="" id="" placeholder="Name of someone special to me">
                     </div>
                 </div>
@@ -166,11 +167,17 @@
                     <div class="label-input">
                         <label for="">First name <span>*</span></label>
                         <input type="text" name="name" id="name" placeholder="First Name" required>
+                        <p class="form-tool-tip">
+                            First Name
+                        </p>
                     </div>
     
                     <div class="label-input">
                         <label for="">Last name <span>*</span></label>
                         <input type="text" name="name" id="name" placeholder="Last name" required>
+                        <p class="form-tool-tip">
+                            Last name
+                        </p>
                     </div>
                 </div>
 
@@ -178,11 +185,17 @@
                     <div class="label-input">
                         <label for="email">Email address <span>*</span></label>
                         <input type="email" name="email" id="name" placeholder="Email address" required>
+                        <p class="form-tool-tip">
+                            Email address
+                        </p>
                     </div>
     
                     <div class="label-input optional-input">
                         <label for="phone-number">Phone number <span>(Optional)</span></label>
                         <input type="text" name="phone-number" id="phone-number" placeholder="Phone number">
+                        <p class="form-tool-tip">
+                            Phone number
+                        </p>
                     </div>
                 </div>
 
@@ -190,11 +203,17 @@
                     <div class="label-input">
                         <label for="country">Country <span>*</span></label>
                         <input type="text" name="country" id="country" placeholder="Country" required>
+                        <p class="form-tool-tip">
+                            Country
+                        </p>
                     </div>
     
                     <div class="label-input">
                         <label for="state">State <span>*</span></label>
                         <input type="text" name="state" id="state" placeholder="State" required>
+                        <p class="form-tool-tip">
+                            State
+                        </p>
                     </div>
                 </div>
 
@@ -202,11 +221,17 @@
                     <div class="label-input">
                         <label for="city">City <span>*</span></label>
                         <input type="text" name="city" id="city" placeholder="City" required>
+                        <p class="form-tool-tip">
+                            City
+                        </p>
                     </div>
 
                     <div class="label-input">
                         <label for="zip">Postal Code <span>*</span></label>
                         <input type="number" name="zip" id="name" placeholder="Postal Code" required>
+                        <p class="form-tool-tip">
+                            Postal Code
+                        </p>
                     </div>
                 </div>
 
@@ -214,11 +239,17 @@
                     <div class="label-input">
                         <label for="">Postal Address 1 <span>*</span></label>
                         <input type="text" name="name" id="name" placeholder="Postal Address 1" required>
+                        <p class="form-tool-tip">
+                            Postal Address 1
+                        </p>
                     </div>
     
                     <div class="label-input optional-input">
                         <label for="">Postal Address 2 <span>(Optional)</span></label>
                         <input type="text" name="name" id="name" placeholder="Postal Address 2">
+                        <p class="form-tool-tip">
+                            Postal Address 2
+                        </p>
                     </div>
                 </div>
 
@@ -269,9 +300,19 @@
                             <label for="">Security code</label>
                             <div class="security-question">
                                 <input type="text" name="name" id="name" placeholder="CVV" required>
-                                <img src="./assets/icons/question-fill.png" alt="">
+                                <img src="./assets/icons/question-fill.png" alt="" class="security-question-img">
                             </div>
                         </div>
+                    </div>
+
+                    <div class="cvv-overlay">
+                        <div class="black-bg"></div>
+                        <h6>AUTHORIZED SIGNATURE</h6>
+                        <div class="cvv-num">
+                            <span>CVV:</span>
+                            <span class="red-circle">989</span>
+                        </div>
+                        <p>Not valid unless signed</p>
                     </div>
 
                     <a href="donation.html" class="donation-btn-cont">
@@ -293,7 +334,7 @@
             </div>
 
             <div class="bank-transfer-payment-container bank">
-                <p>
+                <p class="bank-trans">
                     Transfer to the account number below using your bank's Internet
                     Banking Channel or Mobile App
                 </p>
@@ -313,7 +354,7 @@
                             </div>
     
                             <div class="bank-transfer-account">
-                                <p>074612348744</p>
+                                <p class="copy">0746123487 <img src="./assets/icons/copy-icon.png" alt="" class="copy-img" id="copy" onclick="myFunction()"></p>
                                 <p>Food For All</p>
                                 <p>Savings</p>
                                 <p>GTBank</p>
@@ -335,10 +376,10 @@
                             </div>
     
                             <div class="bank-transfer-account">
-                                <p>074612348744</p>
+                                <p class="copy">3091056534 <img src="./assets/icons/copy-icon.png" alt="" class="copy-img" id="copy" onclick="myFunction()"></p>
                                 <p>Food For All</p>
                                 <p>Savings</p>
-                                <p>GTBank</p>
+                                <p>First Bank</p>
                             </div>
                         </div>
                     </div>
@@ -346,7 +387,7 @@
             </div>
 
             <div class="ussd-payment-container ussd">
-                <p>
+                <p class="ussd-trans">
                     Dial the code below and follow the instructions to complete this
                     transaction with USSD
                 </p>
@@ -416,17 +457,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="confirm-transfer-container">
-                            <p>
-                                Have you completed the payment? 
-                            </p>
-                            <span>
-                                <a href="">Yes</a>
-                                /
-                                <a href="">No</a>
-                            </span>
-                        </div>
                     </div>
 
                     <div class="ussd-card-types-container">
@@ -439,7 +469,17 @@
                             <img src="./assets/img/logo/access-bank-logo.png" alt="">
                         </div>
                     </div>
-                    </div>
+                </div>
+
+                <div class="confirm-transfer-container">
+                    <p>
+                        Have you completed the payment? 
+                    </p>
+                    <span>
+                        <a href="">Yes</a>
+                        /
+                        <a href="">No</a>
+                    </span>
                 </div>
             </div>
 
@@ -544,14 +584,45 @@
                 <p class="privacy">Privacy Notice | Terms and Conditions | FAQ</p>
             </div>
 
-            <div class="contact-details-right">
+            <div class="footer-subscribe">
                 <h5>Stay informed</h5>
                 
                 <p>
                     Subscribe to our newsletter to receive updates of latest news and events.
                 </p>
                 
-                <a href="">Subscribe</a>
+                <button class="footer-subscribe-btn">Subscribe</button>
+            </div>
+
+            <div class="overlay-subscribe">
+                <div class="overlay-subscribe-form">
+                    <p>
+                        Stay Informed and Make a Difference with Our Newsletter.
+                    </p>
+                    <input type="text" name="" id="" placeholder="First name">
+                    <input type="text" name="" id="" placeholder="Last name">
+                    <input type="text" name="" id="" placeholder="Email address">
+    
+                    <a href="">Subscribe</a>
+                </div>
+    
+                <div class="overlay-subscribe-info">
+                    <div class="overlay-subscribe-info-img">
+                        <img src="./assets/img/logo/food-for-all-logo.png" alt="">
+                    </div>
+    
+                    <h5>
+                        Stay connected to Food For All and join a community committed to creating a world without hunger.
+                    </h5>
+    
+                    <p>
+                        Food for All will never sell your personal information. To change your subscription preferences or unsubscribe, email a request to foodforall@gmail.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="close-subscribe">
+                <img src="./assets/icons/close-icon.png" alt="">
             </div>
         </div>
         

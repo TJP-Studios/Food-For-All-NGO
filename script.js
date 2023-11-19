@@ -2,6 +2,9 @@
 const hamburgerIcon = document.querySelector ('.hamburger-icon')
 const closeIcon = document.querySelector ('.close-icon')
 const hamburgerMenu = document.querySelector ('.hamburger-menu')
+const footerSubscribeBtn = document.querySelector ('.footer-subscribe-btn')
+const overlaySubscribe = document.querySelector ('.overlay-subscribe')
+const closeSubscribe = document.querySelector ('.close-subscribe')
 
 hamburgerIcon.addEventListener('click', ()=> {
     hamburgerIcon.classList.add('hide');
@@ -17,14 +20,75 @@ closeIcon.addEventListener('click', ()=> {
 }
 )
 
+
+footerSubscribeBtn.addEventListener('click', ()=> {
+    overlaySubscribe.classList.add('hide');
+    closeSubscribe.classList.add('hide');
+}
+)
+
+closeSubscribe.addEventListener('click', ()=> {
+    overlaySubscribe.classList.remove('hide');
+    closeSubscribe.classList.remove('hide');
+}
+)
+
+
 // Donation Page
 const dedicatedCheckbox = document.querySelector ('.dedicated-checkbox')
 const dedicatedInput = document.querySelector ('.dedicated-input')
+const dedicatedCheckboxMonthly = document.querySelector ('.dedicated-checkbox-monthly')
+const dedicatedInputMonthly = document.querySelector ('.dedicated-input-monthly')
+const donationBtnLeft = document.querySelector ('.donation-btn-left')
+const donationBtnMiddle = document.querySelector ('.donation-btn-middle')
+const donationBtnRight = document.querySelector ('.donation-btn-right')
+const donationMonthlyBtnLeft = document.querySelector ('.donation-monthly-btn-left')
+const donationMonthlyBtnMiddle = document.querySelector ('.donation-monthly-btn-middle')
+const donationMonthlyBtnRight = document.querySelector ('.donation-monthly-btn-right')
+
+donationBtnLeft.addEventListener('click', ()=> {
+    donationBtnLeft.classList.add('active');
+    donationBtnMiddle.classList.remove('active');
+    donationBtnRight.classList.remove('active');
+})
+
+donationBtnMiddle.addEventListener('click', ()=> {
+    donationBtnLeft.classList.remove('active');
+    donationBtnMiddle.classList.add('active');
+    donationBtnRight.classList.remove('active');
+})
+
+donationBtnRight.addEventListener('click', ()=> {
+    donationBtnLeft.classList.remove('active');
+    donationBtnMiddle.classList.remove('active');
+    donationBtnRight.classList.add('active');
+})
+
+donationMonthlyBtnLeft.addEventListener('click', ()=> {
+    donationMonthlyBtnLeft.classList.add('active');
+    donationMonthlyBtnMiddle.classList.remove('active');
+    donationMonthlyBtnRight.classList.remove('active');
+})
+
+donationMonthlyBtnMiddle.addEventListener('click', ()=> {
+    donationMonthlyBtnLeft.classList.remove('active');
+    donationMonthlyBtnMiddle.classList.add('active');
+    donationMonthlyBtnRight.classList.remove('active');
+})
+
+donationMonthlyBtnRight.addEventListener('click', ()=> {
+    donationMonthlyBtnLeft.classList.remove('active');
+    donationMonthlyBtnMiddle.classList.remove('active');
+    donationMonthlyBtnRight.classList.add('active');
+})
+
 
 dedicatedCheckbox.addEventListener('click', ()=> {
     dedicatedInput.classList.toggle('visible');
 })
-
+dedicatedCheckboxMonthly.addEventListener('click', ()=> {
+    dedicatedInputMonthly.classList.toggle('visible');
+})
 
 
 const oneTimeDonation = document.querySelector ('.one-time-donation-inactive')
@@ -39,6 +103,10 @@ monthlyDonation.addEventListener('click', ()=> {
 
     oneTimeDonationContainer.classList.add('hide')
     monthlyDonationContainer.classList.add('hide')
+
+    donationBtnLeft.classList.remove('active');
+    donationBtnMiddle.classList.remove('active');
+    donationBtnRight.classList.remove('active');
 })
 
 oneTimeDonation.addEventListener('click', ()=> {
@@ -48,6 +116,10 @@ oneTimeDonation.addEventListener('click', ()=> {
 
     oneTimeDonationContainer.classList.remove('hide')
     monthlyDonationContainer.classList.remove('hide')
+
+    donationMonthlyBtnLeft.classList.remove('active');
+    donationMonthlyBtnMiddle.classList.remove('active');
+    donationMonthlyBtnRight.classList.remove('active');
 })
 
 
@@ -67,6 +139,8 @@ const cardContainer = document.querySelector ('.card-payment-container')
 const bankContainer = document.querySelector ('.bank-transfer-payment-container')
 const ussdContainer = document.querySelector ('.ussd-payment-container')
 const paypalContainer = document.querySelector ('.paypal-payment-container')
+const securityQuestionImg = document.querySelector ('.security-question-img')
+const cvvOverlay = document.querySelector ('.cvv-overlay')
 
 bankPaymentActive.addEventListener('click', ()=> {
     cardPaymentInactive.classList.add('inactive');
@@ -116,5 +190,25 @@ cardPaymentInactive.addEventListener('click', ()=> {
     paypalContainer.classList.remove('hide')
 })
 
+securityQuestionImg.addEventListener('click', ()=> {
+    cvvOverlay.classList.toggle('hide');
+})
+
 const anonymousCheckbox = document.querySelector ('.card-inactive')
 const hideform = document.querySelector ('.card-inactive')
+
+
+function myFunction() {
+    // Get the text field
+    var copyText = document.getElementsByClassName("copy");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+  
+    // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+  }
