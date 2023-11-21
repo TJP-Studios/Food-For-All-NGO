@@ -312,6 +312,10 @@ img {
     cursor: pointer;
 }
 
+.check:checked {
+    accent-color: #0E811B;
+}
+
 .agreement span {
     color: #000;
     font-size: 16px;

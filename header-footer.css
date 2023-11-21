@@ -67,7 +67,7 @@ nav {
 }
 
 .header-btn {
-    width: 15%;
+    width: 12%;
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
@@ -108,7 +108,7 @@ nav {
 .header-btn .btn-img-animation {
     display: none;
     position: absolute;
-    left: 5%;
+    left: 2%;
     bottom: 30%;
     animation: scroll 1s linear infinite;
 }
@@ -264,7 +264,10 @@ footer {
     font-weight: 400;
     line-height: 24px;
     margin: 0% 0 7% 0;
-    text-align: justify;
+}
+
+.contact-details-middle .privacy {
+    text-align: center;
 }
 
 .footer-subscribe p {
@@ -614,14 +617,14 @@ footer {
 }
 
 .donate-btn {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     gap: 5%;
     align-items: center;
     /* background-color: #0E811B; */
     margin: 10% auto;
-    padding: 3%;
+    padding: 3% 2%;
 }
 
 .donate-btn:hover {
@@ -634,9 +637,7 @@ footer {
 }
 
 .donate-btn p {
-    color: #FFF;
     font-size: 14px;
-    font-weight: 500;
 }
 
 .contact-container {
@@ -644,7 +645,7 @@ footer {
     justify-content: space-between;
     align-items: start;
     padding: 0 5%;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .contact-details-left {
@@ -658,98 +659,217 @@ footer {
     border-left: none;
     border-right: none;
     padding: 5% 0% 0% 0;
-    width: 95%;
+    width: 100%;
     margin: 10% 0 5% 0;
 }
 
-.contact-details-right {
+.footer-subscribe {
     /* padding-left: 5%; */
     width: 100%;
-    margin-bottom: 5%;
 }
 
 .contact-details-left h5 {
-    font-size: 18px;
-    font-weight: 600;
+    color: #0E811B;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
     margin-bottom: 3%;
 }
 
 .contact-details-middle h5 {
-    font-size: 18px;
-    font-weight: 600;
+    color: #0E811B;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
     margin-bottom: 3%;
-    text-align: unset;
+    text-align: center;
 }
 
-.contact-details-right h5 {
-    font-size: 18px;
-    font-weight: 600;
+.footer-subscribe h5 {
+    color: #0E811B;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
     margin-bottom: 3%;
 }
 
 .contact-details-left p {
     color: #000;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 24px;
     margin: 1% 0 10% 0;
 }
 
 .contact-details-middle p {
     color: #000;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 24px;
     margin: 0% 0 7% 0;
-    text-align: justify;
 }
 
-.contact-details-right p {
+.footer-subscribe p {
     color: #000;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 24px;
     margin: 1% 0 10% 0;
 }
 
 .contact-details-left a {
     text-decoration: none;
     color: #FFF;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: normal;
     background-color: #0E811B;
-    padding: 3% 5%;
+    padding: 3% 4%;
     border-radius: 10px;
+    border: none;
 }
 
 
-.contact-details-right a {
-    text-decoration: none;
+.footer-subscribe-btn {
     color: #FFF;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: normal;
     background-color: #0E811B;
-    padding: 3% 5%;
+    padding: 3% 4%;
     border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-details-left a:hover, .footer-subscribe-btn:hover {
+    background-color: #FFF;
+    color: #0E811B;
+    border: 1px solid #0E811B;
+}
+
+.overlay-subscribe {
+    display: none;
+}
+
+.overlay-subscribe.hide {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    position: absolute;
+    top: -25%;
+    left: 0;
+    right: 0;
+}
+
+.close-subscribe {
+    display: none;
+    width: 3%;
+    position: absolute;
+    top: -5%;
+    right: 3%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.close-subscribe.hide {
+    display: block;
+}
+
+.overlay-subscribe-form {
+    width: 45%;
+}
+
+.overlay-subscribe-form p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 3%;
+}
+
+.overlay-subscribe-form input {
+    display: block;
+    border: 1px solid #000;
+    background: #FFF;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    padding: 2%;
+    outline: 0;
+    margin-bottom: 5%;
+}
+
+.overlay-subscribe-form a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #0E811B;
+    padding: 2% 3%;
+    border-radius: 10px;
+    transition: ease 0.3s;
+
+}
+
+.overlay-subscribe-form a:hover {
+    background-color: #FFF;
+    color: #0E811B;
+    border: 1px solid #0E811B;
+}
+
+.overlay-subscribe-info {
+    width: 45%;
+}
+
+.overlay-subscribe-info-img {
+    width: 20%;
+}
+
+.overlay-subscribe-info h5 {
+    color: var(--Pry-color, #0E811B);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 3% 0;
+}
+
+.overlay-subscribe-info p {
+    color: #000;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
 }
 
 .footer-socials {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 10%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+}
+
+.footer-socials img {
+    /* width: 45%; */
+    /* display: block;
+    margin: 0 auto; */
 }
 
 .footer-socials a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
+    width: 35px;
     /* height: 30%; */
     border: 1px solid #0E811B;
     border-radius: 50%;
-    padding: 3%;
+    padding: 2%;
 }
 
 .footer-socials a:hover {
@@ -764,6 +884,7 @@ footer {
     color: #000;
     font-size: 18px;
     font-weight: 400;
+    line-height: normal;
     width: 50%;
     text-align: center;
 }
@@ -774,19 +895,18 @@ footer {
     position: relative;
     box-shadow: 0 0px 20px -10px rgba(0, 0, 0, 0.5);
     display: flex;
-    column-gap: 2%;
+    gap: 4%;
     overflow: hidden;
 }
 
 .slide {
     display: flex;
     align-items: center;
+    /* gap: 5%; */
    justify-content: space-between;
    animation: slideshow 8s linear infinite reverse;
-   animation-fill-mode: both;
 }
 
 .slide img {
-    width: 8%;
-}
+    width: 10%;
 }
