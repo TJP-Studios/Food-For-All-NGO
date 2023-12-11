@@ -19,7 +19,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1% 5%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    padding: 0 5%;
+    background-color: #FFF;
 }
 
 .header-logo {
@@ -67,7 +74,7 @@ nav {
 }
 
 .header-btn {
-    width: 12%;
+    width: 13%;
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
@@ -228,7 +235,7 @@ footer {
 .contact-details-left h5 {
     color: #0E811B;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     margin-bottom: 3%;
 }
@@ -236,7 +243,7 @@ footer {
 .contact-details-middle h5 {
     color: #0E811B;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     margin-bottom: 3%;
     text-align: center;
@@ -245,7 +252,7 @@ footer {
 .footer-subscribe h5 {
     color: #0E811B;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     margin-bottom: 3%;
 }
@@ -285,7 +292,7 @@ footer {
     font-weight: 500;
     line-height: normal;
     background-color: #0E811B;
-    padding: 5% 9%;
+    padding: 7% 9%;
     border-radius: 10px;
     border: none;
 }
@@ -671,7 +678,7 @@ footer {
 .contact-details-left h5 {
     color: #0E811B;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     margin-bottom: 3%;
 }
@@ -679,7 +686,7 @@ footer {
 .contact-details-middle h5 {
     color: #0E811B;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     margin-bottom: 3%;
     text-align: center;
@@ -688,7 +695,7 @@ footer {
 .footer-subscribe h5 {
     color: #0E811B;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     margin-bottom: 3%;
 }
@@ -755,6 +762,7 @@ footer {
 .overlay-subscribe.hide {
     padding: 5%;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
     background-color: #FFF;
     position: absolute;
@@ -765,10 +773,10 @@ footer {
 
 .close-subscribe {
     display: none;
-    width: 3%;
+    width: 5%;
     position: absolute;
-    top: -5%;
-    right: 3%;
+    top: -20%;
+    right: 5%;
     z-index: 1;
     cursor: pointer;
 }
@@ -778,7 +786,7 @@ footer {
 }
 
 .overlay-subscribe-form {
-    width: 45%;
+    width: 100%;
 }
 
 .overlay-subscribe-form p {
@@ -804,7 +812,6 @@ footer {
 }
 
 .overlay-subscribe-form a {
-    text-decoration: none;
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
@@ -817,13 +824,14 @@ footer {
 }
 
 .overlay-subscribe-form a:hover {
-    background-color: #FFF;
-    color: #0E811B;
+    background-color: #0E811B;
+    color: #FFF;
     border: 1px solid #0E811B;
 }
 
 .overlay-subscribe-info {
-    width: 45%;
+    width: 100%;
+    margin-bottom: 5%;
 }
 
 .overlay-subscribe-info-img {
