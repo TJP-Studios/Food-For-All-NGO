@@ -148,9 +148,9 @@ form textarea {
 }
 
 .submit-btn a {
-    color: #000;
+    color: #0E811B;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     text-decoration: none;
     text-align: center;
@@ -362,9 +362,9 @@ form textarea {
     }
     
     .submit-btn a {
-        color: #000;
+        color: #0E811B;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: normal;
         text-decoration: none;
         text-align: center;

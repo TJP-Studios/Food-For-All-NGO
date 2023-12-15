@@ -345,13 +345,13 @@ article h3 {
     margin-bottom: 1.75rem;
 }
 
-/* .card-btn {
+.card-btn {
     display: inline-block;
     padding: .75rem 1.5rem;
     border-radius: .25rem;
     color: green;
     font-weight: 600;
-} */
+}
 
 .swiper-button-prev::after,
 .swiper-button-next::after {

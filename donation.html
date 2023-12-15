@@ -6,6 +6,7 @@
     <title>Donation Page - FFA</title>
     <link rel="stylesheet" href="header-footer.css">
     <link rel="stylesheet" href="donation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -61,11 +62,12 @@
                             <div class="opacity-100"></div>
                         </div>
            </div>
+
             <div class="donation-hero-txt">
                 <h1>MAKE A DIFFERENCE <br>
                     <span>TODAY</span></h1>
                 <p>
-                    Each contribution brings nourishment to children <br>
+                    Each contribution brings nourishment to children
                     and families in need.
                 </p>
             </div>
@@ -355,7 +357,14 @@
                             </div>
     
                             <div class="bank-transfer-account">
-                                <p class="copy">0746123487 <img src="./assets/icons/copy-icon.png" alt="" class="copy-img" id="copy" onclick="myFunction()"></p>
+                                <div class="bank-transfer-account-copy">
+                                    <p class="copy-account">0746123487</p>
+                                    <img src="./assets/icons/copy-icon.png" alt="" class="copy-img" id="copy">
+
+                                    <div class="popup">
+                                        <p class="copied-text">Copied</p>
+                                    </div>
+                                </div>
                                 <p>Food For All</p>
                                 <p>Savings</p>
                                 <p>GTBank</p>
@@ -377,10 +386,17 @@
                             </div>
     
                             <div class="bank-transfer-account">
-                                <p class="copy">3091056534 <img src="./assets/icons/copy-icon.png" alt="" class="copy-img" id="copy" onclick="myFunction()"></p>
+                                <div class="bank-transfer-account-copy">
+                                    <p class="copy-account-2">3091056534</p>
+                                    <img src="./assets/icons/copy-icon.png" alt="" class="copy-img-2" id="copy">
+
+                                    <div class="popup-2">
+                                        <p class="copied-text">Copied</p>
+                                    </div>
+                                </div>
                                 <p>Food For All</p>
                                 <p>Savings</p>
-                                <p>First Bank</p>
+                                <p>Firstbank</p>
                             </div>
                         </div>
                     </div>
@@ -658,6 +674,22 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script src="script.js" type="text/javascript"></script>
+    <!-- <script type="text/javascript">
+          const copyBtn = document.querySelector(".copy-btn");
+          const copyAccount = document.querySelector(".copy-account");
+
+          copyBtn.addEventListener("click", () => {
+            copyAccount.select();
+            document.execCommand("copy");
+            copyBtn.innerHTML = "<i class='fas fa-check'></i>";
+            copyBtn.style.background = "#0e811b";
+            copyBtn.style.color = "#fff";
+
+            setTimeout(() => {
+                document.getSelection().removeAllRanges();
+            }, 2000);
+          });
+    </script>
+</body> -->
 </html>

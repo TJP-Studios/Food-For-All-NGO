@@ -36,7 +36,7 @@ img {
     background: var(--BLACK, #000);
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 1%;
     left: 0;
     right: 0;
 }
@@ -47,17 +47,17 @@ img {
     background: var(--BLACK, #000);
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 1%;
     left: 0;
     right: 0;
 }
 .donation-hero-txt {
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 1%;
     left: 0;
     padding: 17% 0% 0% 5%;
-    /* width: 75%; */
+    width: 50%;
 }
 
 .donation-hero-txt h1 {
@@ -65,6 +65,7 @@ img {
     font-size: 40px;
     font-weight: 700;
     line-height: 64px; /* 104.167% */
+    margin-bottom: 2%;
 }
 
 .donation-hero-txt h1 span {
@@ -73,7 +74,7 @@ img {
 
 .donation-hero-txt p {
     color: var(--WHITE, #FFF);
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     line-height: 32px;
 }
@@ -112,6 +113,12 @@ img {
     padding: 1% 5%;
     border-radius: 0 6px 6px 0;
     cursor: pointer;
+}
+
+.monthly-donation-active.active:hover {
+    background: #0c6c17;
+    border: none;
+    color: #FFF;
 }
 
 .donation-btn-opt {
@@ -838,7 +845,7 @@ img {
     display: flex;
     gap: 10%;
     /* justify-content: space-between; */
-    width: 80%;
+    width: 90%;
 }
 
 /* .bank-transfer-payment {
@@ -862,13 +869,120 @@ img {
     font-size: 16px;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 12%;
+    margin-bottom: 18%;
 }
 
-.copy-img {
-    width: 8%;
-    margin-left: 2%;
+.copy-account {
+    /* display: inline; */
+}
+
+.bank-transfer-account-copy, .bank-transfer-account-copy {
+    display: flex;
+    gap: 10%;
+    /* align-items: center; */
+    position: relative;
+}
+
+.copy-img, .copy-img-2 {
+    /* width: 5%; */
+    width: 20px;
+    height: 20px;
+    /* margin-left: 2%; */
     cursor: pointer;
+    /* background-color: #eee; */
+    /* padding: 3%; */
+    /* border-radius: 50%; */
+}
+
+.popup{
+    background-color: #0E811B;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 10% 0% 10%;
+    border-radius: 3px;
+    position: absolute;
+    top: -50%;
+    right: -90%;
+    transform: translateX(-50%, -20px);
+    opacity: 0;
+    pointer-events: none;
+}
+.popup-2 {
+    background-color: #0E811B;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 10% 0% 10%;
+    border-radius: 3px;
+    position: absolute;
+    top: -50%;
+    right: -90%;
+    transform: translateY(-50%, -20px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup.active {
+    animation: popup 2s ease-in-out forwards;
+}
+.popup-2.active {
+    animation: popup-2 2s ease-in-out forwards;
+}
+
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-50%, -20px);
+    }
+    40% {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(-50%, 0px);
+    }
+    80% {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(-50%, 0px);
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-50%, -20px);
+    }
+}
+@keyframes popup-2 {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-50%, -20px);
+    }
+    40% {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(-50%, 0px);
+    }
+    80% {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(-50%, 0px);
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-50%, -20px);
+    }
+}
+
+.bank-transfer-account-copy .copied-text, .bank-transfer-account-copy-2 .copied-text-2 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
 }
 
 .ussd-payment-container {
@@ -1136,14 +1250,14 @@ img {
         right: 0;
         padding: 20% 0% 0% 5%;
         /* z-index: 100; */
-        /* width: 75%; */
+        width: 60%;
         background-color: #0202022a;
         /* opacity: 1; */
     }
     
     .donation-hero-txt h1 {
         color: var(--WHITE, #FFF);
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 700;
         line-height: 32px; /* 104.167% */
     }
@@ -1154,7 +1268,7 @@ img {
     
     .donation-hero-txt p {
         color: var(--WHITE, #FFF);
-        font-size: 9px;
+        font-size: 12px;
         font-weight: 600;
         line-height: 14px;
     }

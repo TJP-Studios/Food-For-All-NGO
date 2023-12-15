@@ -24,7 +24,7 @@ header {
     left: 0;
     right: 0;
     top: 0;
-    z-index: 5;
+    z-index: 10;
     padding: 0 5%;
     background-color: #FFF;
 }
@@ -35,7 +35,7 @@ header {
 }
 
 nav {
-    width: 85%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +87,7 @@ nav {
     transition: ease 0.2s;
     border-radius: 6px;
     position: fixed;
-    right: 3%;
+    right: 5%;
     z-index: 10;
 }
 
@@ -547,7 +547,7 @@ footer {
     }
 
     .nav-icons {
-        width: 10%;
+        width: 8%;
     }
 
     .hamburger-icon {
@@ -561,6 +561,7 @@ footer {
         right: 6%;
         background-color: #FFF;
         position: absolute;
+        top: 19%;
         z-index: 5;
         padding: 3% 5%;
         width: 70%;
@@ -584,7 +585,7 @@ footer {
     .hamburger-menu .mobile-active {
         color: var(--WHITE, #FFF);
         background-color: #0E811B;
-        padding: 5% 10%;
+        padding: 3% 6%;
         border-radius: 10px;
     }
 
@@ -594,7 +595,7 @@ footer {
         position: absolute;
         top: 1%;
         right: 5%;
-        z-index: 1;
+        z-index: 10;
     }
 
     .close-icon.hide {

@@ -144,6 +144,12 @@ form {
     cursor: pointer;
 }
 
+.monthly-donation-active.active:hover {
+    background: #0c6c17;
+    border: none;
+    color: #FFF;
+}
+
 .one-time-btn {
     border: none;
     background: #0E811B;
@@ -152,7 +158,7 @@ form {
     font-weight: 500;
     line-height: normal;
     width: 50%;
-    padding: 4% 5%;
+    padding: 2% 5%;
     border-radius: 6px 0 0 6px;
     cursor: pointer;
 }
@@ -170,13 +176,16 @@ form {
     font-weight: 500;
     line-height: normal;
     width: 50%;
-    padding: 4% 5%;
+    padding: 2% 5%;
     border-radius: 0 6px 6px 0;
     cursor: pointer;
 }
 
 .monthly-btn:hover {
-    border: 1px solid #000;
+    border-left: 2px solid #FFF;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
     background: #0E811B;
     color: #FFF;
 }
@@ -184,7 +193,8 @@ form {
 .donation-form-selection {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5%;
+    margin-top: 7%;
+    margin-bottom: 10%;
 }
 
 .donation-form-selection button {
@@ -195,13 +205,26 @@ form {
     font-weight: 500;
     line-height: normal;
     width: 30%;
-    padding: 4% 5%;
+    padding: 2% 5%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.donation-btn-left.active, .donation-btn-middle.active, .donation-btn-right.active {
+    border: none;
+    background: #0E811B;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    width: 30%;
+    padding: 2% 5%;
     border-radius: 6px;
     cursor: pointer;
 }
 
 .donation-form-selection button:hover {
-    border: 1px solid #000;
+    border: none;
     background: #0E811B;
     color: #FFF;
 }
@@ -219,7 +242,7 @@ form {
     font-weight: 500;
     line-height: normal;
     width: 100%;
-    padding: 4% 5%;
+    padding: 2% 5%;
     outline: 0;
 }
 
@@ -278,7 +301,7 @@ form {
     background-color: #0E811B;
     color: #fff;
     border: none;
-    padding: 4% 5%;
+    padding: 2% 5%;
     transition: ease 0.2s;
     text-decoration: none;
     border-radius: 6px;
@@ -382,36 +405,36 @@ form {
 .our-mission {
     display: flex;
     justify-content: flex-start;
-    margin: 5% 10%;
+    margin: 5%;
     position: relative;
 }
 
 .our-mission-img {
-    width: 45%;
+    width: 60%;
 }
 
 .our-mission-txt {
-    width: 60%;
+    width: 50%;
     opacity: 0.9;
     background: #0E811B;
     box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
     padding: 3%;
     position: absolute;
     right: 0%;
-    top: 11%;
+    top: 22%;
 }
 
 .our-mission-txt h5 {
     color: #FFF;
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 500;
     line-height: normal;
     margin-bottom: 3%;
 }
 
 .our-mission-txt p {
     color: #FFF;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 40px; /* 200% */
     text-align: justify;
@@ -420,36 +443,36 @@ form {
 .our-work {
     display: flex;
     justify-content: flex-end;
-    margin: 5% 10%;
+    margin: 5%;
     position: relative;
 }
 
 .our-work-img {
-    width: 45%;
+    width: 60%;
 }
 
 .our-work-txt {
-    width: 60%;
+    width: 50%;
     opacity: 0.9;
     background: #0E811B;
     box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
     padding: 3%;
     position: absolute;
     left: 0%;
-    top: 15%;
+    top: 18%;
 }
 
 .our-work-txt h5 {
     color: #FFF;
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 500;
     line-height: normal;
     margin-bottom: 3%;
 }
 
 .our-work-txt p {
     color: #FFF;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 40px; /* 200% */
     text-align: justify;
@@ -486,7 +509,7 @@ form {
 
 .stats-details p {
     color: #0E811B;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 30px; 
     text-align: center;
@@ -495,36 +518,36 @@ form {
 .our-cart-combact-hunger {
     display: flex;
     justify-content: flex-start;
-    margin: 5% 10%;
+    margin: 5%;
     position: relative;
 }
 
 .our-cart-combact-hunger-img {
-    width: 45%;
+    width: 60%;
 }
 
 .our-cart-combact-hunger-txt {
-    width: 60%;
+    width: 50%;
     opacity: 0.9;
     background: #FFF;
     box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
     padding: 3%;
     position: absolute;
     right: 0%;
-    top: 7%;
+    top: 18%;
 }
 
 .our-cart-combact-hunger-txt h5 {
     color: var(--Pry-color, #0E811B);
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 500;
     line-height: normal;
     margin-bottom: 3%;
 }
 
 .our-cart-combact-hunger-txt p {
     color: var(--BLACK, #0D0A0B);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 40px; /* 200% */
     text-align: justify;
@@ -585,7 +608,7 @@ article h3 {
 
 .home-article-txt a {
     color: #0E811B;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     line-height: normal;
     margin: 3% 0;
@@ -658,7 +681,7 @@ article h3 {
 
 .mission-target p {
     color: #FFF;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: normal;
 }
@@ -679,7 +702,7 @@ article h3 {
 
 .mission-stats-title p {
     color: #FFF;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: normal;
 }
@@ -721,15 +744,19 @@ hr {
 .our-cart-last {
     display: flex;
     justify-content: flex-end;
-    margin: 5% 10%;
+    margin: 5%;
     position: relative;
 }
 
-.our-cart-last-txt {
+.our-cart-last-img {
     width: 60%;
+}
+
+.our-cart-last-txt {
+    width: 50%;
     position: absolute;
     left: 0%;
-    top: 4.5%;
+    top: 15%;
     opacity: 0.9;
     background: #FFF;
     box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
@@ -746,17 +773,12 @@ hr {
 
 .our-cart-last-txt p {
     color: #000;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 40px; /* 200% */
     text-align: justify;
     margin-bottom: 5%;
 }
-
-.our-cart-last-img {
-    width: 45%;
-}
-
 
 .fact-check-container {
     margin: 0% 5% 5% 5%;
@@ -946,7 +968,7 @@ hr {
     
     .one-time-btn {
         font-size: 14px;
-        padding: 3% 5%;
+        padding: 2% 5%;
     }
     
     .one-time-btn:hover {
@@ -956,7 +978,7 @@ hr {
     .monthly-btn {
         font-size: 14px;
         width: 50%;
-        padding: 3% 5%;
+        padding: 2% 5%;
     }
     
     .monthly-btn:hover {
@@ -968,12 +990,12 @@ hr {
     .donation-form-selection {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
     }
     
     .donation-form-selection button {
         font-size: 14px;
-        padding: 3% 5%;
+        padding: 2% 5%;
     }
     
     .donation-form-selection button:hover {
@@ -984,7 +1006,7 @@ hr {
     
     .donation-form-input {
         position: relative;
-        margin-bottom: 15%;
+        /* margin-bottom: 15%; */
     }
     
     .donation-form-input input {
@@ -995,7 +1017,7 @@ hr {
         font-weight: 500;
         line-height: normal;
         width: 100%;
-        padding: 3% 5%;
+        padding: 2% 5%;
         outline: 0;
     }
     
@@ -1051,7 +1073,7 @@ hr {
         background-color: #0E811B;
         color: #fff;
         border: none;
-        padding: 3% 5%;
+        padding: 2% 5%;
         transition: ease 0.2s;
         text-decoration: none;
         border-radius: 6px;

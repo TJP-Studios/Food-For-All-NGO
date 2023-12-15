@@ -197,18 +197,37 @@ securityQuestionImg.addEventListener('click', ()=> {
 const anonymousCheckbox = document.querySelector ('.card-inactive')
 const hideform = document.querySelector ('.card-inactive')
 
+// Copy to Clipboard
+const  copyImage = document.querySelector(".copy-img");
+const  popup = document.querySelector(".popup");
+const  copyAccount = document.querySelector(".copy-account");
 
-function myFunction() {
-    // Get the text field
-    var copyText = document.getElementsByClassName("copy");
-  
-    // Select the text field
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
-  
-     // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
-  
-    // Alert the copied text
-    alert("Copied the text: " + copyText.value);
-  }
+copyImage.addEventListener('click', () =>{
+    popup.classList.add('active');
+    copyToClipboard();
+});
+popup.addEventListener('animationend', () =>{
+    popup.classList.remove('active');
+});
+
+copyToClipboard = () => {
+    const copyAccount = document.querySelector(".copy-account");
+    navigator.clipboard.writeText(copyAccount.innerText);
+}
+// Copy to Clipboard for the Second Text
+const  copyImage_2 = document.querySelector(".copy-img-2");
+const  popup_2 = document.querySelector(".popup");
+const  copyAccount_2 = document.querySelector(".copy-account-2");
+
+copyImage.addEventListener('click', () =>{
+    popup_2.classList.add('active');
+    copyToClipboard();
+});
+popup.addEventListener('animationend', () =>{
+    popup_2.classList.remove('active');
+});
+
+copyToClipboard = () => {
+    const copyAccount_2 = document.querySelector(".copy-account-2");
+    navigator.clipboard.writeText(copyAccount_2.innerText);
+}
