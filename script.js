@@ -81,6 +81,16 @@ let confirmPaypalPopup = document.getElementById("confirm-paypal-popup");
         function closeConfirmPaypalPopup() {
             confirmPaypalPopup.classList.remove("open-confirm-paypal-popup");
         }
+        function cancelDonation() {
+            cardPaymentInactive.classList.remove('inactive');
+            cardContainer.classList.remove('hide')
+            bankPaymentActive.classList.remove('active');
+            ussdPaymentActive.classList.remove('active');
+            paypalPaymentActive.classList.remove('active');
+            bankContainer.classList.remove('hide')
+            ussdContainer.classList.remove('hide')
+            paypalContainer.classList.remove('hide')
+        }
 
 
 // Donation Page
