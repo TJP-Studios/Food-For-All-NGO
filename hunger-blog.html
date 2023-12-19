@@ -240,6 +240,10 @@
                 </p>
                 
                 <button class="footer-subscribe-btn">Subscribe</button>
+
+                <a href="" class="go-to-the-top" onclick="scrollToTop()">
+                    <img src="./assets/icons/up-arrow-green.png" alt="">
+                </a>
             </div>
 
             <div class="overlay-subscribe">
@@ -251,7 +255,16 @@
                     <input type="text" name="" id="" placeholder="Last name">
                     <input type="text" name="" id="" placeholder="Email address">
     
-                    <a href="">Subscribe</a>
+                    <button type="button" onclick="openSubscribePopup()">Subscribe</button>
+
+                    <div class="subscribe-popup" id="subscribe-popup">
+                        <img src="./assets/icons/tick.png" alt="">
+                        <h2>Thank You!</h2>
+                        <p>
+                            Your details have been successfully submitted.
+                        </p>
+                        <button type="button" onclick="closeSubscribePopup()">Close</button>
+                    </div>
                 </div>
     
                 <div class="overlay-subscribe-info">

@@ -527,6 +527,7 @@ img {
     border-top: 0.5px solid #000;
     border-bottom: 0.5px solid #000;
     background: #FFF;
+    position: relative;
  }
  
  .payment-container h3 {
@@ -741,12 +742,13 @@ img {
     background-color: #0E811B;
     color: #fff;
     border: none;
-    padding: 1% 5%;
+    padding: 1.5% 5%;
     transition: ease 0.2s;
     text-decoration: none;
     border-radius: 6px;
     position: relative;
     margin-top: 5%;
+    cursor: pointer;
 }
 
 .donation-btn-cont:hover {
@@ -791,6 +793,61 @@ img {
     /* text-decoration: none; */
 }
 
+.card-donation-popup {
+    width: 400px;
+    background: #fff;
+    border: 1px solid #0E811B;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #0E811B;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-card-donation-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.card-donation-popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.card-donation-popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.card-donation-popup h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-donation-popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #0E811B;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 .card-types-container {
     width: 45%;
 }
@@ -829,6 +886,7 @@ img {
 .bank-transfer-payment-details {
     display: flex;
     gap: 5%;
+    margin-bottom: 2%;
 }
 
 .bank-transfer-payment-wrapper {
@@ -985,6 +1043,62 @@ img {
     text-align: center;
 }
 
+.confirm-popup {
+    width: 400px;
+    background: #fff;
+    border: 1px solid #0E811B;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #0E811B;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-confirm-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.confirm-popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.confirm-popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.confirm-popup h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.confirm-popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #0E811B;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
 .ussd-payment-container {
     display: none;
 }
@@ -1043,6 +1157,7 @@ img {
 
 .confirm-transfer-container {
     display: flex;
+    /* align-items: center; */
     gap: 5%;
 }
 
@@ -1055,23 +1170,85 @@ img {
 
 .confirm-transfer-container span {
     display: flex;
-    gap: 10%;
-    color: #000;
+    align-items: center;
+    gap: 20%;
+    color: #0E811B;
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
 }
 
-.confirm-transfer-container span a {
-    color: #000;
+.confirm-transfer-container span button {
+    color: #0E811B;
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #0E811B;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 8% 10%;
 }
 
-.confirm-transfer-container span a:hover {
+.confirm-transfer-container span button:hover {
+    color: #fff;
+    background-color: #0E811B;
+}
+
+.confirm-ussd-popup {
+    width: 400px;
+    background: #fff;
+    border: 1px solid #0E811B;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
     color: #0E811B;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-confirm-ussd-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.confirm-ussd-popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.confirm-ussd-popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.confirm-ussd-popup h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.confirm-ussd-popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #0E811B;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .ussd-card-types-container {
@@ -1119,6 +1296,62 @@ img {
     outline: 0;
     margin-bottom: 3%;
 }
+
+.confirm-paypal-popup {
+    width: 400px;
+    background: #fff;
+    border: 1px solid #0E811B;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #0E811B;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-confirm-paypal-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.confirm-paypal-popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.confirm-paypal-popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.confirm-paypal-popup h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.confirm-paypal-popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #0E811B;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 
 .paypal-card-types-container {
     width: 45%;

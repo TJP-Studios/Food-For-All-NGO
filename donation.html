@@ -281,7 +281,7 @@
                 <button class="payment-active paypal-active">Paypal</button>
             </div>
 
-            <div class="card-payment-container card">
+            <div class="card-payment-container card" id="card-payment-container">
                 <div class="card-payment-details">
                     <div class="card-payment-label-input">
                         <label for="">Cardholder name</label>
@@ -318,11 +318,21 @@
                         <p>Not valid unless signed</p>
                     </div>
 
-                    <a href="donation.html" class="donation-btn-cont">
+                    <button class="donation-btn-cont" onclick="openCardDonationPopup()">
                         <img src="./assets/icons/streamline_interface-favorite-heart-reward-social-rating-media-heart-it-like-favorite-love.svg" alt="">
                         <img src="./assets/icons/streamline_interface-favorite-heart-reward-social-rating-media-heart-it-like-favorite-love.png" alt="" class="btn-img-animation">
                             <p>DONATE NOW</p>
-                    </a>
+                    </button>
+
+                    <div class="card-donation-popup" id="card-donation-popup">
+                        <img src="./assets/icons/tick.png" alt="">
+                        <h2>Thank You!</h2>
+                        <p>
+                            Your donation was successful!
+                        </p>
+                        <h5>A receipt has been sent to your mail</h5>
+                        <button type="button" onclick="closeCardDonationPopup()">Close</button>
+                    </div>
                 </div>
 
                 <div class="card-types-container">
@@ -400,6 +410,27 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="confirm-transfer-container">
+                    <p>
+                        Have you completed the payment? 
+                    </p>
+                    <span>
+                        <button onclick="openConfirmPopup()">Confirm</button>
+                        /
+                        <button>Cancel</button>
+                    </span>
+                </div>
+
+                <div class="confirm-popup" id="confirm-popup">
+                    <img src="./assets/icons/tick.png" alt="">
+                    <h2>Thank You!</h2>
+                    <p>
+                        Your donation was successful!
+                    </p>
+                    <h5>A receipt has been sent to your mail</h5>
+                    <button type="button" onclick="closeConfirmPopup()">Close</button>
                 </div>
             </div>
 
@@ -493,10 +524,21 @@
                         Have you completed the payment? 
                     </p>
                     <span>
-                        <a href="">Yes</a>
+                        <button onclick="openConfirmUssdPopup()">Confirm</button>
                         /
-                        <a href="">No</a>
+                        <button>Cancel</button>
                     </span>
+                </div>
+
+                <div class="confirm-ussd-popup" id="confirm-ussd-popup">
+                    <img src="./assets/icons/tick.png" alt="">
+                    <h2>Thank You!</h2>
+                    <p>
+                        Your donation was successful!
+                    </p>
+                    <h5>A receipt has been sent to your mail</h5>
+                    </p>
+                    <button type="button" onclick="closeConfirmUssdPopup()">Close</button>
                 </div>
             </div>
 
@@ -512,11 +554,21 @@
                         <input type="text" name="name" id="name" placeholder="Password" required>
                     </div>
 
-                    <a href="donation.html" class="donation-btn-cont">
+                    <button class="donation-btn-cont" onclick="openConfirmPaypalPopup()">
                         <img src="./assets/icons/streamline_interface-favorite-heart-reward-social-rating-media-heart-it-like-favorite-love.svg" alt="">
                         <img src="./assets/icons/streamline_interface-favorite-heart-reward-social-rating-media-heart-it-like-favorite-love.png" alt="" class="btn-img-animation">
                             <p>DONATE NOW</p>
-                    </a>
+                    </button>
+
+                    <div class="confirm-paypal-popup" id="confirm-paypal-popup">
+                        <img src="./assets/icons/tick.png" alt="">
+                        <h2>Thank You!</h2>
+                        <p>
+                            Your donation was successful!
+                        </p>
+                        <h5>A receipt has been sent to your mail</h5>
+                        <button type="button" onclick="closeConfirmPaypalPopup()">Close</button>
+                    </div>
                 </div>
 
                 <div class="paypal-card-types-container">
@@ -609,6 +661,10 @@
                 </p>
                 
                 <button class="footer-subscribe-btn">Subscribe</button>
+
+                <a href="" class="go-to-the-top" onclick="scrollToTop()">
+                    <img src="./assets/icons/up-arrow-green.png" alt="">
+                </a>
             </div>
 
             <div class="overlay-subscribe">
@@ -620,7 +676,16 @@
                     <input type="text" name="" id="" placeholder="Last name">
                     <input type="text" name="" id="" placeholder="Email address">
     
-                    <a href="">Subscribe</a>
+                    <button type="button" onclick="openSubscribePopup()">Subscribe</button>
+
+                    <div class="subscribe-popup" id="subscribe-popup">
+                        <img src="./assets/icons/tick.png" alt="">
+                        <h2>Thank You!</h2>
+                        <p>
+                            Your details have been successfully submitted.
+                        </p>
+                        <button type="button" onclick="closeSubscribePopup()">Close</button>
+                    </div>
                 </div>
     
                 <div class="overlay-subscribe-info">
@@ -675,21 +740,5 @@
     </footer>
 
     <script src="script.js" type="text/javascript"></script>
-    <!-- <script type="text/javascript">
-          const copyBtn = document.querySelector(".copy-btn");
-          const copyAccount = document.querySelector(".copy-account");
-
-          copyBtn.addEventListener("click", () => {
-            copyAccount.select();
-            document.execCommand("copy");
-            copyBtn.innerHTML = "<i class='fas fa-check'></i>";
-            copyBtn.style.background = "#0e811b";
-            copyBtn.style.color = "#fff";
-
-            setTimeout(() => {
-                document.getSelection().removeAllRanges();
-            }, 2000);
-          });
-    </script>
-</body> -->
+</body>
 </html>

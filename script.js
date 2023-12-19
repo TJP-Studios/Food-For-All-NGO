@@ -33,6 +33,55 @@ closeSubscribe.addEventListener('click', ()=> {
 }
 )
 
+let subscribePopup = document.getElementById("subscribe-popup");
+
+        function openSubscribePopup() {
+            subscribePopup.classList.add("open-subscribe-popup");
+        }
+        function closeSubscribePopup() {
+            subscribePopup.classList.remove("open-subscribe-popup");
+        }
+let contactPopup = document.getElementById("contact-popup");
+
+        function openContactPopup() {
+            contactPopup.classList.add("open-contact-popup");
+        }
+        function closeContactPopup() {
+            contactPopup.classList.remove("open-contact-popup");
+        }
+let cardDonationPopup = document.getElementById("card-donation-popup");
+
+        function openCardDonationPopup() {
+            cardDonationPopup.classList.add("open-card-donation-popup");
+        }
+        function closeCardDonationPopup() {
+            cardDonationPopup.classList.remove("open-card-donation-popup");
+        }
+let confirmPopup = document.getElementById("confirm-popup");
+
+        function openConfirmPopup() {
+            confirmPopup.classList.add("open-confirm-popup");
+        }
+        function closeConfirmPopup() {
+            confirmPopup.classList.remove("open-confirm-popup");
+        }
+let confirmUssdPopup = document.getElementById("confirm-ussd-popup");
+
+        function openConfirmUssdPopup() {
+            confirmUssdPopup.classList.add("open-confirm-ussd-popup");
+        }
+        function closeConfirmUssdPopup() {
+            confirmUssdPopup.classList.remove("open-confirm-ussd-popup");
+        }
+let confirmPaypalPopup = document.getElementById("confirm-paypal-popup");
+
+        function openConfirmPaypalPopup() {
+            confirmPaypalPopup.classList.add("open-confirm-paypal-popup");
+        }
+        function closeConfirmPaypalPopup() {
+            confirmPaypalPopup.classList.remove("open-confirm-paypal-popup");
+        }
+
 
 // Donation Page
 const dedicatedCheckbox = document.querySelector ('.dedicated-checkbox')
