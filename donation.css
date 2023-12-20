@@ -938,11 +938,7 @@ img {
     margin-bottom: 18%;
 }
 
-.copy-account {
-    /* display: inline; */
-}
-
-.bank-transfer-account-copy, .bank-transfer-account-copy {
+.bank-transfer-account-copy, .bank-transfer-account-copy-2 {
     display: flex;
     gap: 10%;
     /* align-items: center; */
@@ -1162,17 +1158,18 @@ img {
     margin-bottom: 15%;
 }
 
-.ussd-transfer-account p {
+.ussd-transfer-account a {
     color: var(--Pry-color, #0E811B);
     font-size: 16px;
     font-weight: 700;
     line-height: normal;
     margin-bottom: 20%;
+    text-decoration: none;
 }
 
 .confirm-transfer-container {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     gap: 5%;
 }
 
@@ -1181,14 +1178,15 @@ img {
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
+    margin-top: 2%;
 }
 
 .confirm-transfer-container span {
     display: flex;
     align-items: center;
-    gap: 20%;
+    gap: 10%;
     color: #0E811B;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 500;
     line-height: normal;
 }
@@ -2287,12 +2285,13 @@ img {
         margin-bottom: 15%;
     }
     
-    .ussd-transfer-account p {
+    .ussd-transfer-account a {
         color: var(--Pry-color, #0E811B);
         font-size: 12px;
         font-weight: 700;
         line-height: normal;
         margin-bottom: 20%;
+        text-decoration: none;
     }
     
     .confirm-transfer-container {
@@ -2315,17 +2314,23 @@ img {
         font-weight: 500;
         line-height: normal;
     }
-    
-    .confirm-transfer-container span a {
-        color: #000;
+
+    .confirm-transfer-container span button {
+        color: #0E811B;
         font-size: 14px;
         font-weight: 500;
         line-height: normal;
         text-decoration: none;
+        cursor: pointer;
+        border: 1px solid #0E811B;
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 6% 10%;
     }
     
-    .confirm-transfer-container span a:hover {
-        color: #0E811B;
+    .confirm-transfer-container span button:hover {
+        color: #fff;
+        background-color: #0E811B;
     }
     
     .ussd-card-types-container {

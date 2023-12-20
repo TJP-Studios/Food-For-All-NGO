@@ -280,21 +280,21 @@ popup.addEventListener('animationend', () =>{
 copyToClipboard = () => {
     const copyAccount = document.querySelector(".copy-account");
     navigator.clipboard.writeText(copyAccount.innerText);
-}
+};
 // Copy to Clipboard for the Second Text
 const  copyImage_2 = document.querySelector(".copy-img-2");
-const  popup_2 = document.querySelector(".popup");
+const  popup_2 = document.querySelector(".popup-2");
 const  copyAccount_2 = document.querySelector(".copy-account-2");
 
-copyImage.addEventListener('click', () =>{
+copyImage_2.addEventListener('click', () =>{
     popup_2.classList.add('active');
     copyToClipboard();
 });
-popup.addEventListener('animationend', () =>{
+popup_2.addEventListener('animationend', () =>{
     popup_2.classList.remove('active');
 });
 
 copyToClipboard = () => {
     const copyAccount_2 = document.querySelector(".copy-account-2");
     navigator.clipboard.writeText(copyAccount_2.innerText);
-}
+};
