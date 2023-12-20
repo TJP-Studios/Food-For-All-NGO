@@ -49,6 +49,14 @@ let contactPopup = document.getElementById("contact-popup");
         function closeContactPopup() {
             contactPopup.classList.remove("open-contact-popup");
         }
+let partnersContactPopup = document.getElementById("partners-contact-popup");
+
+        function openPartnersContactPopup() {
+            partnersContactPopup.classList.add("open-partners-contact-popup");
+        }
+        function closePartnersContactPopup() {
+            partnersContactPopup.classList.remove("open-partners-contact-popup");
+        }
 let cardDonationPopup = document.getElementById("card-donation-popup");
 
         function openCardDonationPopup() {
@@ -85,11 +93,11 @@ let confirmPaypalPopup = document.getElementById("confirm-paypal-popup");
             cardPaymentInactive.classList.remove('inactive');
             cardContainer.classList.remove('hide')
             bankPaymentActive.classList.remove('active');
-            ussdPaymentActive.classList.remove('active');
-            paypalPaymentActive.classList.remove('active');
-            bankContainer.classList.remove('hide')
-            ussdContainer.classList.remove('hide')
-            paypalContainer.classList.remove('hide')
+        ussdPaymentActive.classList.remove('active');
+        paypalPaymentActive.classList.remove('active');
+        bankContainer.classList.remove('hide')
+        ussdContainer.classList.remove('hide')
+        paypalContainer.classList.remove('hide')
         }
 
 

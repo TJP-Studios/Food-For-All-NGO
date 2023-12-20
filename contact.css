@@ -194,17 +194,24 @@ form textarea {
 }
 
 .contact-popup img {
-    width: 100px;
-    margin-top: -50px;
+    width: 25%;
+    /* margin-top: -50px; */
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
 }
 
 .contact-popup h2 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 500;
     margin: 30px 0 10px;
+}
+
+.contact-popup p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    color: #000;
 }
 
 .contact-popup button {
@@ -434,6 +441,64 @@ form textarea {
         background-color: #0E811B;
         border: 2px solid #FFF;
     }
+
+    .contact-popup {
+        width: 100%;
+        background: #fff;
+        border: 1px solid #0E811B;
+        border-radius: 6px;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #0E811B;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+    }
+    
+    .open-contact-popup {
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    
+    .contact-popup img {
+        width: 15%;
+        /* margin-top: -50px; */
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+    }
+    
+    .contact-popup h2 {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 30px 0 10px;
+    }
+    
+    .contact-popup p {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 20px 0 10px;
+        color: #000;
+    }
+    
+    .contact-popup button {
+        width: 100%;
+        margin-top: 50px;
+        padding: 10px 0;
+        background: #0E811B;
+        color: #fff;
+        border: 0;
+        outline: none;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    
     
     .contact-img {
         width: 100%;

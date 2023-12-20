@@ -794,7 +794,7 @@ img {
 }
 
 .card-donation-popup {
-    width: 400px;
+    width: 70%;
     background: #fff;
     border: 1px solid #0E811B;
     border-radius: 6px;
@@ -816,21 +816,29 @@ img {
 }
 
 .card-donation-popup img {
-    width: 100px;
-    margin-top: -50px;
+    width: 25%;
+    /* margin-top: -50px; */
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
 }
 
 .card-donation-popup h2 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 500;
     margin: 30px 0 10px;
 }
 
+.card-donation-popup p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    color: #000;
+}
+
+
 .card-donation-popup h5 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -1044,7 +1052,7 @@ img {
 }
 
 .confirm-popup {
-    width: 400px;
+    width: 30%;
     background: #fff;
     border: 1px solid #0E811B;
     border-radius: 6px;
@@ -1066,22 +1074,29 @@ img {
 }
 
 .confirm-popup img {
-    width: 100px;
-    margin-top: -50px;
+    width: 25%;
+    /* margin-top: -50px; */
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
 }
 
 .confirm-popup h2 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 500;
     margin: 30px 0 10px;
 }
 
+.confirm-popup p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    color: #000;
+}
+
 .confirm-popup h5 {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .confirm-popup button {
@@ -1197,7 +1212,7 @@ img {
 }
 
 .confirm-ussd-popup {
-    width: 400px;
+    width: 30%;
     background: #fff;
     border: 1px solid #0E811B;
     border-radius: 6px;
@@ -1219,22 +1234,29 @@ img {
 }
 
 .confirm-ussd-popup img {
-    width: 100px;
-    margin-top: -50px;
+    width: 25%;
+    /* margin-top: -50px; */
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
 }
 
 .confirm-ussd-popup h2 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 500;
     margin: 30px 0 10px;
 }
 
+.confirm-ussd-popup p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    color: #000;
+}
+
 .confirm-ussd-popup h5 {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .confirm-ussd-popup button {
@@ -1298,7 +1320,7 @@ img {
 }
 
 .confirm-paypal-popup {
-    width: 400px;
+    width: 30%;
     background: #fff;
     border: 1px solid #0E811B;
     border-radius: 6px;
@@ -1320,21 +1342,28 @@ img {
 }
 
 .confirm-paypal-popup img {
-    width: 100px;
-    margin-top: -50px;
+    width: 25%;
+    /* margin-top: -50px; */
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
 }
 
 .confirm-paypal-popup h2 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 500;
     margin: 30px 0 10px;
 }
 
+.confirm-paypal-popup p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    color: #000;
+}
+
 .confirm-paypal-popup h5 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
 }
 

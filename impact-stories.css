@@ -20,11 +20,20 @@ a {
 }
 
 .impact-hero h1 {
+    color: #fff;
     font-size: 56px;
     font-weight: 700;
     letter-spacing: 0em;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 2.5%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20% 0% 0% 40%;
+    background-color: #0202022a;
+    z-index: 2;
 }
 
 .impact-hero-img {
@@ -41,6 +50,51 @@ a {
     padding: 0 5%;
     animation: fade 20s infinite ease-in-out;
     position: relative;
+}
+
+.impact-hero-overlay {
+    background: #000;
+    opacity: 0.6;
+    position: absolute;
+    /* width: 100%; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Keyframe */
+@keyframes fade {
+    0%
+    {
+        background-image: url(./assets/img/pic/image-1.png);
+    }
+
+    0%
+    {
+        background-image: url(./assets/img/pic/image-11.png);
+    }
+
+    40%
+    {
+        background-image: url(./assets/img/pic/image-12.png);
+    }
+
+    60%
+    {
+        background-image: url(./assets/img/pic/image-13.png);
+    }
+
+    80%
+    {
+        background-image: url(./assets/img/pic/image-14.png);
+    }
+
+    100%
+    {
+        background-image: url(./assets/img/pic/image-15.png);
+    }
 }
 
 .our-stories p {
@@ -416,38 +470,6 @@ article h3 {
     }
 }
 
-/* Keyframe */
-@keyframes fade {
-    0%
-    {
-        background-image: url(./assets/img/pic/image-1.png);
-    }
-
-    0%
-    {
-        background-image: url(./assets/img/pic/image-11.png);
-    }
-
-    40%
-    {
-        background-image: url(./assets/img/pic/image-12.png);
-    }
-
-    60%
-    {
-        background-image: url(./assets/img/pic/image-13.png);
-    }
-
-    80%
-    {
-        background-image: url(./assets/img/pic/image-14.png);
-    }
-
-    100%
-    {
-        background-image: url(./assets/img/pic/image-15.png);
-    }
-}
 
 
 /* Mobile Screen */
