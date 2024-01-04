@@ -568,7 +568,7 @@ form textarea {
         margin: 1% 0 5% 0;
     }
     
-    .email-phone-input{
+    .email-phone-input {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
