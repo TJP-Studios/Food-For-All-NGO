@@ -572,6 +572,10 @@ img {
     color: #FFF;
  }
 
+ .swiper {
+    display: none !important;
+}
+
  .payment-method .card-payment {
     border-radius: 10px;
     background: #0E811B;
@@ -1948,12 +1952,11 @@ img {
      } */
     
      .payment-container {
-        margin: 3% 0 0 0;
+        margin: 5% 0 0 0;
         padding: 0 0% 3% 0%;
         border-top: 0.5px solid #000;
         border-bottom: none;
         background: #FFF;
-        margin-top: 5%;
      }
      
      .payment-container h3 {
@@ -1971,46 +1974,94 @@ img {
         line-height: normal;
         margin: 0 5% 2% 5%;
      }
+
+     .swiper {
+        display: flex !important;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 5%;
+    }
+
+    .payment-method-mobile-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+    }
+    
+    .card-container {
+        /* padding: 3%; */
+        padding: 5rem;
+    }
+    
+    .card-content {
+        margin-inline: 1.75rem;
+        border-radius: 1.25rem;
+        overflow: hidden;
+    }
     
      .payment-method {
-        display: flex;
-        justify-content: unset;
-        gap: 5%;
+        /* display: flex; */
+        display: none;
+        /* justify-content: unset;
+        gap: unset;
         margin-bottom: 3%;
         margin-top:5%;
-        width: 300%;
+        width: 100%; */
+     }
+
+     .payment-method-mobile {
+        width: 100% !important;
      }
     
-     .payment-method button {
-        width: 40%;
+     .payment-method-mobile button {
+        width: 90%;
         padding: 1%;
         border-radius: 10px;
         background: #FFF;
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-        border: none;
+        border: 1px solid #0E811B;
         color: #000;
         font-size: 16px;
         font-weight: 500;
         line-height: normal;
         text-align: center;
         cursor: pointer;
-        float: right;
+        /* float: right; */
      }
     
-     .payment-method button:hover {
+     .payment-method-mobile button:hover {
         background: #0E811B;
         color: #FFF;
      }
+
+     .swiper-slide {
+        margin-right: 0;
+     }
     
-     .payment-method .card-payment {
+     .payment-method-mobile .card-payment {
         border-radius: 10px;
         background: #0E811B;
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
         color: #FFF;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         line-height: normal;
      }
+
+     .swiper-button-prev, .swiper-button-next, .swiper-pagination {
+        display: none !important;
+    }
     
      .card-payment-container {
         display: flex;
@@ -2182,7 +2233,7 @@ img {
     }
     
     .bank-transfer-payment-container {
-        display: none;
+        /* display: none; */
     }
     
     .bank-transfer-payment-container .bank-trans {
@@ -2444,7 +2495,7 @@ img {
     .card-inactive.inactive {
         background: #FFF;
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-        border: none;
+        border: 1px solid #0E811B;
         color: #000;
     }
     

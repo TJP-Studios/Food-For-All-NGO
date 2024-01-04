@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="header-footer.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="home-swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -423,72 +424,68 @@
                 </div>
             </div>
 
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="fact-check-slider">
-                        <h5>1</h5>
-                        <p>
-                            5 million children under the age of five are malnourished in nigeria.
-                        </p>
-                    </div>
-                </div>
+            <!-- Slider mobile container -->
+            <div class="fact-check-mobile-container">
+                <div class="container">
+                    <div class="card-container swiper">
+                        <div class="card-content">
+                            <div class="swiper-wrapper">
+                                <div class="fact-check swiper-slide">
+                                    <h5>1</h5>
+                                    <p>
+                                        5 million children under the age of five are malnourished in nigeria.
+                                    </p>
+                                </div>
 
-                <div class="swiper-slide">
-                    <div class="fact-check-slider">
-                        <h5>2</h5>
-                        <p>
-                            225 million Nigerians at high risk of food insecurity in 2023
-                        </p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="fact-check-slider">
-                        <h5>3</h5>
-                        <p>
-                            Global hunger index rank nigeria 103 out of 121 countries, indicating a serious level of hunger.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="fact-check-slider">
-                        <h5>4</h5>
-                        <p>
-                            In Nigeria, approximately 13 million children under the age of five suffer from acute malnutrition, emphasizing the severity of the hunger crisis.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="fact-check-slider">
-                        <h5>5</h5>
-                        <p>
-                            High food prices and economic challenges have left nearly 4 out of every 10 Nigerians struggling to access enough nutritious food to meet their basic needs.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="fact-check-slider">
-                        <h5>6</h5>
-                        <p>
-                            The North East region of Nigeria, particularly conflict-affected areas, faces one of the most severe humanitarian crises, with millions of people in need of food assistance and support.
-                        </p>
-                    </div>
-                </div>
-                ...
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+                                <div class="fact-check swiper-slide">
+                                    <h5>2</h5>
+                                    <p>
+                                        225 million Nigerians at high risk of food insecurity in 2023
+                                    </p>
+                                </div>
             
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                                <div class="fact-check swiper-slide">
+                                    <h5>3</h5>
+                                    <p>
+                                        Global hunger index rank nigeria 103 out of 121 countries, indicating a serious level of hunger.
+                                    </p>
+                                </div>
+            
+                                <div class="fact-check swiper-slide">
+                                    <h5>4</h5>
+                                    <p>
+                                        In Nigeria, approximately 13 million children under the age of five suffer from acute malnutrition, emphasizing the severity of the hunger crisis.
+                                    </p>
+                                </div>
+            
+                                <div class="fact-check swiper-slide">
+                                    <h5>5</h5>
+                                    <p>
+                                        High food prices and economic challenges have left nearly 4 out of every 10 Nigerians struggling to access enough nutritious food to meet their basic needs.
+                                    </p>
+                                </div>
+            
+                                <div class="fact-check swiper-slide">
+                                    <h5>6</h5>
+                                    <p>
+                                        The North East region of Nigeria, particularly conflict-affected areas, faces one of the most severe humanitarian crises, with millions of people in need of food assistance and support.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            
+                          <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+            
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev swiper-btn">
+                            <!-- <i class="ri-arrow-left-s-line"></i> -->
+                        </div>
+                        <div class="swiper-button-next">
+                            <!-- <i class="ri-arrow-right-s-line"></i> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -639,6 +636,7 @@
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="home-slider.js"></script>
 
     <script>
         function scrollToTop() {

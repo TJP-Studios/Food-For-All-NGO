@@ -642,7 +642,7 @@ article h3 {
 }
 
 .line-btn hr {
-    width: 87.7%;
+    width: 88.5%;
     border: 1px solid #0E811B;
 }
 
@@ -968,6 +968,7 @@ hr {
     
     .one-time-btn {
         font-size: 14px;
+        font-weight: 600;
         padding: 2% 5%;
     }
     
@@ -976,7 +977,8 @@ hr {
     }
     
     .monthly-btn {
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 600;
         width: 50%;
         padding: 2% 5%;
     }
@@ -994,7 +996,8 @@ hr {
     }
     
     .donation-form-selection button {
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 600;
         padding: 2% 5%;
     }
     
@@ -1013,7 +1016,7 @@ hr {
         border: 1px solid #000;
         background: #FFF;
         color: #000;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         line-height: normal;
         width: 100%;
@@ -1061,7 +1064,7 @@ hr {
      }
      
      .agreement span {
-         font-size: 14px;
+         font-size: 16px;
      }
     
     .hero-form-donate-btn {
@@ -1115,7 +1118,7 @@ hr {
     }
     
     .hero-form-donate-btn p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .home-partners {
@@ -1200,7 +1203,7 @@ hr {
     
     .our-mission-txt p {
         color: #FFF;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 40px; /* 200% */
         text-align: justify;
@@ -1236,7 +1239,7 @@ hr {
     }
     
     .our-work-txt p {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .stats-container {
@@ -1270,7 +1273,7 @@ hr {
     
     .stats-details p {
         color: #0E811B;
-        font-size: 14px;
+        font-size: 16px;
         line-height: normal;
     }
     
@@ -1303,7 +1306,7 @@ hr {
     
     .our-cart-combact-hunger-txt p {
         color: var(--BLACK, #0D0A0B);
-        font-size: 14px;
+        font-size: 16px;
         line-height: normal;
         text-align: justify;
         margin-bottom: 10%;
@@ -1312,7 +1315,7 @@ hr {
     
     .cart-link {
         color: #0E811B;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         line-height: normal;
         text-decoration: none;
@@ -1367,7 +1370,9 @@ hr {
     }
     
     .home-article-txt p {
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px; /* 200% */
     }
     
     .home-article-link {
@@ -1388,14 +1393,15 @@ hr {
     }
     
     .line-btn hr {
-        width: 60%;
+        width: 70%;
         border: 1px solid #0E811B;
     }
     
     .line-btn a {
-        font-size: 14px;
+        font-size: 15px;
+        font-weight: 600;
         padding: 2% 2%;
-        width: 40%;
+        width: 30%;
         text-align: center;
     }
     
@@ -1413,7 +1419,7 @@ hr {
     .mission-target h3 {
         color: #FFF;
         text-align: center;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 500;
         line-height: normal;
         width: 70%;
@@ -1422,9 +1428,9 @@ hr {
     
     .mission-target p {
         color: #FFF;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 30px; /* 200% */
     }
     
     .mission-target-stats {
@@ -1439,9 +1445,9 @@ hr {
     
     .mission-stats-title p {
         color: #FFF;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 30px; /* 200% */
     }
     
     .mission-stats-title p span {
@@ -1455,14 +1461,14 @@ hr {
     }
     
     .mission-stats-info img {
-        width: 18%;
+        width: 14%;
     }
     
     .mission-stats-info p {
         color: #FFF;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
-        line-height: normal;
+        line-height: 30px; /* 200% */
     }
     
     hr {
@@ -1471,8 +1477,10 @@ hr {
     }
     
     .mission-target h4 {
-        font-size: 24px;
-        margin-bottom: 2%;
+        font-size: 22px;
+        width: 70%;
+        text-align: center;
+        margin: 0 auto 2% auto;
     }
     
     .our-cart-last h5 {
@@ -1485,9 +1493,9 @@ hr {
     
     .our-cart-last p {
         color: #000;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
-        line-height: 40px; /* 200% */
+        line-height: 30px; /* 200% */
         text-align: justify;
     }
     
@@ -1524,29 +1532,62 @@ hr {
         font-weight: 600;
         line-height: 58px; /* 120.833% */
         margin-bottom: 2%;
+        text-align: center;
+    }
+
+    .fact-check-mobile-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+    }
+    
+    .card-container {
+        /* padding: 3%; */
+        padding: 5rem;
+    }
+    
+    .card-content {
+        margin-inline: 1.75rem;
+        border-radius: 1.25rem;
+        overflow: hidden;
     }
     
     .fact-check-cart {
         display: none;
-        justify-content: unset;
-        gap: 5%;
-    }
+        /* justify-content: unset;
+        gap: 5%; */
+    } 
+
+    /* .fact-check {
+        width: 100%;
+        background-color: #FFF;
+        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
+        padding: 10% 2%;
+        margin-bottom: 0%;
+        color: #000;
+        transition: ease 0.3s;
+    } */
 
     .swiper {
-        display: flex;
-        width: 80%;
+        display: flex !important;
+        width: 100%;
         height: fit-content;
     }
 
-    .fact-check-slider {
+    .fact-check {
         width: 50%;
-        background: var(--Pry-color, #0E811B);
-        box-shadow: 1.73743px 1.73743px 5.2123px 0px rgba(0, 0, 0, 0.25);
-        padding: 10% 2%;
+        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
+        padding: 3% 2%;
         margin-bottom: 5%;
-        color: #FFF;
         transition: ease 0.3s;
         float: right;
+        border: 0.1px solid #0E811B;
     }
     
     .fact-check:hover {
@@ -1555,23 +1596,27 @@ hr {
         scale: 120%;
     }
     
-    .fact-check-slider h5 {
+    .fact-check h5 {
         /* color: var(--BLACK, #0D0A0B); */
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 700;
         line-height: 58px; /* 120.833% */
         text-transform: capitalize;
         text-align: center;
     }
     
-    .fact-check-slider p {
+    .fact-check p {
         /* color: #000; */
         text-align: center;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 32px; /* 133.333% */
         text-transform: capitalize;
         align-items: center;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: none !important;
     }
 }
 
