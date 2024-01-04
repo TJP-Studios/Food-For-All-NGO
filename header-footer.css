@@ -278,6 +278,7 @@ footer {
 
 .contact-details-middle .privacy {
     text-align: center;
+    font-size: 13px;
 }
 
 .footer-subscribe p {
@@ -799,7 +800,7 @@ footer {
 
 .contact-details-left p {
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     margin: 1% 0 10% 0;
@@ -807,7 +808,7 @@ footer {
 
 .contact-details-middle p {
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     margin: 0% 0 7% 0;
@@ -815,7 +816,7 @@ footer {
 
 .footer-subscribe p {
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     margin: 1% 0 10% 0;
@@ -1043,10 +1044,10 @@ footer {
 
 .middle .privacy {
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: normal;
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
 }
 
