@@ -136,7 +136,7 @@ iframe {
     
     .food-bank-hero-txt h1 {
         color: var(--Pry-color, #0E811B);
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 600;
         line-height: 120%; /* 76.8px */
         margin-bottom: 2%;
