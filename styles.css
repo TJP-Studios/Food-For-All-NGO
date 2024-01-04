@@ -884,7 +884,7 @@ hr {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         padding: 0 5%;
         animation: fade 20s infinite linear;
         position: relative;
@@ -905,7 +905,7 @@ hr {
     .home-hero-txt {
         width: 100%;
         z-index: 2;
-        padding: 20% 0;
+        /* margin: 50% 0; */
     }
     
     .home-hero-txt h1 {
@@ -1587,7 +1587,7 @@ hr {
         margin-bottom: 5%;
         transition: ease 0.3s;
         float: right;
-        border: 0.1px solid #0E811B;
+        border: 1px solid #0E811B;
     }
     
     .fact-check:hover {

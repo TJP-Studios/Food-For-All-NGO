@@ -620,6 +620,20 @@ footer {
 
   /* Mobile Screen */
 @media screen and (max-width: 478px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        position: static;
+        /* left: 0;
+        right: 0;
+        top: 0; */
+        z-index: 10;
+        padding: 1% 5%;
+        background-color: #FFF;
+    }
+
     .header-logo {
         width: 20%;
     }
@@ -1034,6 +1048,27 @@ footer {
     line-height: normal;
     width: 50%;
     text-align: center;
+}
+
+.go-to-the-top {
+    background-color: #FFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #0E811B;
+    box-shadow: 0 0px 20px -10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* bottom: 0; */
+    top: 0;
+    right: 0%;
+    text-align: end;
+}
+
+.go-to-the-top img {
+    width: 40%;
 }
 
 .slider-wrapper {
