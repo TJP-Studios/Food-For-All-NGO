@@ -21,7 +21,7 @@ a {
 }
 
 .home-hero {
-    background-image: url(./assets/img/pic/image-14.png);
+    /* background-image: url(./assets/img/pic/image-14.png); */
     /* opacity: 0.9; */
     width: 100%;
     height: 100vh;
@@ -34,6 +34,34 @@ a {
     padding: 0 5%;
     animation: fade 20s infinite linear;
     position: relative;
+}
+
+/* Keyframe */
+@keyframes fade {
+    0%
+    {
+        background-image: url(./assets/img/pic/image-14.webp);
+    }
+
+    40%
+    {
+        background-image: url(./assets/img/pic/image-22.webp);
+    }
+
+    60%
+    {
+        background-image: url(./assets/img/pic/image-13.webp);
+    }
+
+    80%
+    {
+        background-image: url(./assets/img/pic/image-1.webp);
+    }
+
+    100%
+    {
+        background-image: url(./assets/img/pic/image-4.webp);
+    }
 }
 
 .hero-overlay {
@@ -843,34 +871,6 @@ hr {
     animation: scroll 10s ;
 }
 
-
-/* Keyframe */
-@keyframes fade {
-    0%
-    {
-        background-image: url(./assets/img/pic/image-14.png);
-    }
-
-    40%
-    {
-        background-image: url(./assets/img/pic/image-22.png);
-    }
-
-    60%
-    {
-        background-image: url(./assets/img/pic/image-3.png);
-    }
-
-    80%
-    {
-        background-image: url(./assets/img/pic/image-1.png);
-    }
-
-    100%
-    {
-        background-image: url(./assets/img/pic/image-4.png);
-    }
-}
 
 /* Mobile Screen */
 @media screen and (max-width:478px) {

@@ -25,13 +25,14 @@ a {
     align-items: center;
     margin: 5%;
     background: #F3F2F2;
+    padding: 3% 2%;
 }
 
 .food-bank-hero-txt {
     width: 60%;
     /* background: #F3F2F2; */
     border-radius: 20px;
-    padding: 1% 5% 0% 2%;
+    padding: 1% 5% 0% 0%;
 }
 
 .food-bank-hero-txt h1 {

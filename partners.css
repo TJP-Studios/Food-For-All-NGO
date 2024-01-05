@@ -58,7 +58,7 @@ a {
     align-items: center;
     /* justify-content: center; */
     padding: 0 5%;
-    animation: fade 20s infinite ease-in-out;
+    animation: fade 40s infinite ease-in-out;
     position: relative;
 }
 
@@ -78,32 +78,32 @@ a {
 @keyframes fade {
     0%
     {
-        background-image: url(./assets/img/pic/image-29.png);
+        background-image: url(./assets/img/pic/image-29.webp);
     }
 
     20%
     {
-        background-image: url(./assets/img/pic/image-30.png);
+        background-image: url(./assets/img/pic/image-30.webp);
     }
 
     40%
     {
-        background-image: url(./assets/img/pic/image-31.png);
+        background-image: url(./assets/img/pic/image-31.webp);
     }
 
     60%
     {
-        background-image: url(./assets/img/pic/image-29.png);
+        background-image: url(./assets/img/pic/image-29.webp);
     }
 
     80%
     {
-        background-image: url(./assets/img/pic/image-30.png);
+        background-image: url(./assets/img/pic/image-30.webp);
     }
 
     100%
     {
-        background-image: url(./assets/img/pic/image-31.png);
+        background-image: url(./assets/img/pic/image-31.webp);
     }
 }
 
@@ -155,7 +155,7 @@ a {
 
 .our-partners-cart-txt h5 {
     color: var(--Pry-color, #0E811B);
-    font-size: 40px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
     /* line-height: 98px; 102.083% */

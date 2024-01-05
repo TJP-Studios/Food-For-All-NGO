@@ -68,32 +68,32 @@ a {
 @keyframes fade {
     0%
     {
-        background-image: url(./assets/img/pic/image-1.png);
+        background-image: url(./assets/img/pic/image-1.webp);
     }
 
     0%
     {
-        background-image: url(./assets/img/pic/image-11.png);
+        background-image: url(./assets/img/pic/image-11.webp);
     }
 
     40%
     {
-        background-image: url(./assets/img/pic/image-12.png);
+        background-image: url(./assets/img/pic/image-12.webp);
     }
 
     60%
     {
-        background-image: url(./assets/img/pic/image-13.png);
+        background-image: url(./assets/img/pic/image-13.webp);
     }
 
     80%
     {
-        background-image: url(./assets/img/pic/image-14.png);
+        background-image: url(./assets/img/pic/image-14.webp);
     }
 
     100%
     {
-        background-image: url(./assets/img/pic/image-15.png);
+        background-image: url(./assets/img/pic/image-15.webp);
     }
 }
 
@@ -103,13 +103,13 @@ a {
     font-size: 32px;
     font-weight: 500;
     line-height: normal;
-    width: 45%;
+    width: 55%;
     margin: 2% auto;
 }
 
 .cart-link {
     color: #0E811B;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
@@ -222,7 +222,7 @@ article {
 
 article h3 {
     color: var(--Pry-color, #000);
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     line-height: normal;
     background: var(--WHITE, #FFF);
@@ -267,14 +267,15 @@ article h3 {
 
 .testimonials {
     position: relative;
+    margin-top: 5%;
 }
 
 .testimonials h3 {
     color: var(--BLACK, #0D0A0B);
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
-    line-height: 150px; /* 150% */
+    line-height: normal;
 }
 
 .testimonial-container {

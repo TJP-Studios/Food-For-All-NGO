@@ -42,7 +42,7 @@ a {
 .hunger-blog-hero-txt h1 {
     color: var(--WHITE, #FFF);
     text-align: center;
-    font-size: 32px;
+    font-size: 56px;
     font-weight: 700;
     line-height: 120%; /* 57.6px */
     margin-bottom: 1%;
@@ -50,14 +50,14 @@ a {
 
 .hunger-blog-hero-txt p {
     color: var(--WHITE, #FFF);
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 600;
     line-height: 120%; /* 38.4px */
     text-align: center;
 }
 
 .hunger-blog-hero-img {
-    background-image: url(./assets/img/pic/image-23.png);
+    background-image: url(./assets/img/pic/image-23.webp);
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center; */
