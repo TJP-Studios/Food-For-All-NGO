@@ -57,12 +57,12 @@ img {
     bottom: 1%;
     left: 0;
     padding: 17% 0% 0% 5%;
-    width: 50%;
+    width: 65%;
 }
 
 .donation-hero-txt h1 {
     color: var(--WHITE, #FFF);
-    font-size: 40px;
+    font-size: 56px;
     font-weight: 700;
     line-height: 64px; /* 104.167% */
     margin-bottom: 2%;
@@ -74,9 +74,9 @@ img {
 
 .donation-hero-txt p {
     color: var(--WHITE, #FFF);
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 600;
-    line-height: 32px;
+    line-height: 40px;
 }
 
 .one-time-donation-inactive.inactive {
@@ -1512,29 +1512,29 @@ img {
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 20% 0% 0% 5%;
+        padding: 20% 5% 0% 5%;
         /* z-index: 100; */
-        width: 60%;
+        width: 100%;
         background-color: #0202022a;
         /* opacity: 1; */
     }
     
     .donation-hero-txt h1 {
         color: var(--WHITE, #FFF);
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 700;
         line-height: 32px; /* 104.167% */
     }
 
     .donation-hero-txt h1 span {
-        font-size: 28px;
+        font-size: 26px;
     }
     
     .donation-hero-txt p {
         color: var(--WHITE, #FFF);
-        font-size: 12px;
+        font-size: 20px;
         font-weight: 600;
-        line-height: 14px;
+        line-height: 24px;
     }
 
     .one-time-donation-inactive.inactive {
@@ -1979,6 +1979,8 @@ img {
         display: flex !important;
         width: 100%;
         height: fit-content;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .swiper-wrapper {
@@ -2068,11 +2070,12 @@ img {
         flex-direction: column-reverse;
         justify-content: space-between;
         /* display: none; */
+        width: 100%;
      }
     
      .card-payment-details {
         width: 100%;
-        margin: 0 5% 0% 5%;
+        margin: 0% 5%;
     }
     
     .card-payment-label-input label {
@@ -2091,7 +2094,7 @@ img {
         font-size: 14px;
         font-weight: 500;
         line-height: normal;
-        width: 100%;
+        width: 92%;
         padding: 2%;
         outline: 0;
         margin-bottom: 3%;
@@ -2099,7 +2102,8 @@ img {
     
     .card-payment-wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 3%;
         align-items: center;
     }
     
@@ -2123,7 +2127,7 @@ img {
         font-size: 14px;
         font-weight: 500;
         line-height: normal;
-        width: 100%;
+        width: 90%;
         outline: 0;
     }
     
@@ -2148,6 +2152,17 @@ img {
     
     .security-question img {
         width: 10%;
+    }
+
+    .cvv-overlay {
+        display: none;
+        background-color: #0E811B;
+        width: 50%;
+        padding: 4% 0 4% 0;
+        /* scale: 60%; */
+        position: absolute;
+        top: 5%;
+        right: 8%;
     }
     
     .donation-btn-cont {
@@ -2473,7 +2488,7 @@ img {
     
     .about-us p {
         color: #000;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 28px; /* 220% */
     }
